@@ -1,0 +1,711 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BeMicro Max 10"
+Date "30 Jan 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X06 U5
+U 1 1 54CC4285
+P 7350 2650
+F 0 "U5" H 7350 3000 50  0000 C CNN
+F 1 "CONN_02X06" H 7350 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06" H 7350 1450 60  0001 C CNN
+F 3 "" H 7350 1450 60  0000 C CNN
+	1    7350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X02 J11
+U 1 1 54CC46CB
+P 7350 1850
+F 0 "J11" H 7350 2000 50  0000 C CNN
+F 1 "CONN_02X02" H 7350 1700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 7350 650 60  0001 C CNN
+F 3 "" H 7350 650 60  0000 C CNN
+	1    7350 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 1800 0    39   Input ~ 0
+ADC_IN1
+Wire Wire Line
+	7600 1800 7750 1800
+Wire Wire Line
+	7750 1900 7600 1900
+$Comp
+L GND #GND01
+U 1 1 54CC48A7
+P 7750 2000
+F 0 "#GND01" H 7750 2000 30  0001 C CNN
+F 1 "GND" H 7750 1930 30  0001 C CNN
+F 2 "" H 7750 2000 60  0000 C CNN
+F 3 "" H 7750 2000 60  0000 C CNN
+	1    7750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1800 7100 1800
+Wire Wire Line
+	7100 1900 6950 1900
+Text GLabel 7750 1800 2    39   Input ~ 0
+ADC_IN2
+Wire Wire Line
+	7750 1900 7750 2000
+$Comp
+L GND #GND02
+U 1 1 54CC51F6
+P 6950 2000
+F 0 "#GND02" H 6950 2000 30  0001 C CNN
+F 1 "GND" H 6950 1930 30  0001 C CNN
+F 2 "" H 6950 2000 60  0000 C CNN
+F 3 "" H 6950 2000 60  0000 C CNN
+	1    6950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1900 6950 2000
+Text GLabel 7750 2500 2    39   Input ~ 0
+PMOD_B_2
+Text GLabel 7750 2600 2    39   Input ~ 0
+PMOD_B_3
+Text GLabel 7750 2700 2    39   Input ~ 0
+PMOD_B_4
+Text GLabel 7750 2400 2    39   Input ~ 0
+PMOD_B_1
+Text GLabel 6950 2400 0    39   Input ~ 0
+PMOD_A_1
+Text GLabel 6950 2500 0    39   Input ~ 0
+PMOD_A_2
+Text GLabel 6950 2600 0    39   Input ~ 0
+PMOD_A_3
+Text GLabel 6950 2700 0    39   Input ~ 0
+PMOD_A_4
+$Comp
+L +3.3V #3V03
+U 1 1 54CC59BD
+P 7750 3000
+F 0 "#3V03" H 7750 2960 30  0001 C CNN
+F 1 "+3.3V" H 7750 3110 30  0000 C CNN
+F 2 "" H 7750 3000 60  0000 C CNN
+F 3 "" H 7750 3000 60  0000 C CNN
+	1    7750 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 2900 7750 2900
+Wire Wire Line
+	7750 2900 7750 3000
+$Comp
+L GND #GND04
+U 1 1 54CC5A13
+P 7900 3050
+F 0 "#GND04" H 7900 3050 30  0001 C CNN
+F 1 "GND" H 7900 2980 30  0001 C CNN
+F 2 "" H 7900 3050 60  0000 C CNN
+F 3 "" H 7900 3050 60  0000 C CNN
+	1    7900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2800 7900 2800
+Wire Wire Line
+	7900 2800 7900 3050
+Wire Wire Line
+	7600 2400 7750 2400
+Wire Wire Line
+	7750 2500 7600 2500
+Wire Wire Line
+	7600 2600 7750 2600
+Wire Wire Line
+	7750 2700 7600 2700
+Wire Wire Line
+	7100 2400 6950 2400
+Wire Wire Line
+	6950 2500 7100 2500
+Wire Wire Line
+	7100 2600 6950 2600
+Wire Wire Line
+	6950 2700 7100 2700
+$Comp
+L +3.3V #3V05
+U 1 1 54CC5C97
+P 6950 3000
+F 0 "#3V05" H 6950 2960 30  0001 C CNN
+F 1 "+3.3V" H 6950 3110 30  0000 C CNN
+F 2 "" H 6950 3000 60  0000 C CNN
+F 3 "" H 6950 3000 60  0000 C CNN
+	1    6950 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #GND06
+U 1 1 54CC5CA7
+P 6800 3050
+F 0 "#GND06" H 6800 3050 30  0001 C CNN
+F 1 "GND" H 6800 2980 30  0001 C CNN
+F 2 "" H 6800 3050 60  0000 C CNN
+F 3 "" H 6800 3050 60  0000 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3000 6950 2900
+Wire Wire Line
+	6950 2900 7100 2900
+Wire Wire Line
+	7100 2800 6800 2800
+Wire Wire Line
+	6800 2800 6800 3050
+$Comp
+L CONN_02X06 U6
+U 1 1 54CC61D6
+P 7350 3700
+F 0 "U6" H 7350 4050 50  0000 C CNN
+F 1 "CONN_02X06" H 7350 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06" H 7350 2500 60  0001 C CNN
+F 3 "" H 7350 2500 60  0000 C CNN
+	1    7350 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 3550 2    39   Input ~ 0
+PMOD_D_2
+Text GLabel 7750 3650 2    39   Input ~ 0
+PMOD_D_3
+Text GLabel 7750 3750 2    39   Input ~ 0
+PMOD_D_4
+Text GLabel 7750 3450 2    39   Input ~ 0
+PMOD_D_1
+Text GLabel 6950 3450 0    39   Input ~ 0
+PMOD_C_1
+Text GLabel 6950 3550 0    39   Input ~ 0
+PMOD_C_2
+Text GLabel 6950 3650 0    39   Input ~ 0
+PMOD_C_3
+Text GLabel 6950 3750 0    39   Input ~ 0
+PMOD_C_4
+$Comp
+L +3.3V #3V07
+U 1 1 54CC61E4
+P 7750 4050
+F 0 "#3V07" H 7750 4010 30  0001 C CNN
+F 1 "+3.3V" H 7750 4160 30  0000 C CNN
+F 2 "" H 7750 4050 60  0000 C CNN
+F 3 "" H 7750 4050 60  0000 C CNN
+	1    7750 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 3950 7750 3950
+Wire Wire Line
+	7750 3950 7750 4050
+$Comp
+L GND #GND08
+U 1 1 54CC61EC
+P 7900 4100
+F 0 "#GND08" H 7900 4100 30  0001 C CNN
+F 1 "GND" H 7900 4030 30  0001 C CNN
+F 2 "" H 7900 4100 60  0000 C CNN
+F 3 "" H 7900 4100 60  0000 C CNN
+	1    7900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3850 7900 3850
+Wire Wire Line
+	7900 3850 7900 4100
+Wire Wire Line
+	7600 3450 7750 3450
+Wire Wire Line
+	7750 3550 7600 3550
+Wire Wire Line
+	7600 3650 7750 3650
+Wire Wire Line
+	7750 3750 7600 3750
+Wire Wire Line
+	7100 3450 6950 3450
+Wire Wire Line
+	6950 3550 7100 3550
+Wire Wire Line
+	7100 3650 6950 3650
+Wire Wire Line
+	6950 3750 7100 3750
+$Comp
+L +3.3V #3V09
+U 1 1 54CC61FC
+P 6950 4050
+F 0 "#3V09" H 6950 4010 30  0001 C CNN
+F 1 "+3.3V" H 6950 4160 30  0000 C CNN
+F 2 "" H 6950 4050 60  0000 C CNN
+F 3 "" H 6950 4050 60  0000 C CNN
+	1    6950 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #GND010
+U 1 1 54CC6202
+P 6800 4100
+F 0 "#GND010" H 6800 4100 30  0001 C CNN
+F 1 "GND" H 6800 4030 30  0001 C CNN
+F 2 "" H 6800 4100 60  0000 C CNN
+F 3 "" H 6800 4100 60  0000 C CNN
+	1    6800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4050 6950 3950
+Wire Wire Line
+	6950 3950 7100 3950
+Wire Wire Line
+	7100 3850 6800 3850
+Wire Wire Line
+	6800 3850 6800 4100
+$Comp
+L +3.3V #3V011
+U 1 1 54CC67FA
+P 4350 1750
+F 0 "#3V011" H 4350 1710 30  0001 C CNN
+F 1 "+3.3V" H 4350 1860 30  0000 C CNN
+F 2 "" H 4350 1750 60  0000 C CNN
+F 3 "" H 4350 1750 60  0000 C CNN
+	1    4350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1850 4350 1850
+Wire Wire Line
+	4350 1850 4350 1750
+$Comp
+L +3.3V #3V012
+U 1 1 54CC6847
+P 3550 1750
+F 0 "#3V012" H 3550 1710 30  0001 C CNN
+F 1 "+3.3V" H 3550 1860 30  0000 C CNN
+F 2 "" H 3550 1750 60  0000 C CNN
+F 3 "" H 3550 1750 60  0000 C CNN
+	1    3550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1850 3550 1850
+Wire Wire Line
+	3550 1850 3550 1750
+Text GLabel 4350 1950 2    39   Input ~ 0
+I2C_SCL
+Text GLabel 4350 2050 2    39   Input ~ 0
+GPIO_B
+Text GLabel 4350 2350 2    39   Input ~ 0
+LVDS_TX_B+
+Text GLabel 4350 2450 2    39   Input ~ 0
+LVDS_TX_A+
+Text GLabel 4350 2550 2    39   Input ~ 0
+LVDS_TX_9+
+Text GLabel 4350 3150 2    39   Input ~ 0
+LVDS_TX_5+
+Text GLabel 4350 3250 2    39   Input ~ 0
+LVDS_TX_4+
+Text GLabel 4350 3350 2    39   Input ~ 0
+LVDS_TX_3+
+Text GLabel 4350 2750 2    39   Input ~ 0
+LVDS_TX_8+
+Text GLabel 4350 2850 2    39   Input ~ 0
+LVDS_TX_7+
+Text GLabel 4350 2950 2    39   Input ~ 0
+LVDS_TX_6+
+Text GLabel 4350 3550 2    39   Input ~ 0
+LVDS_TX_2+
+Text GLabel 4350 3650 2    39   Input ~ 0
+LVDS_TX_1+
+Text GLabel 4350 3750 2    39   Input ~ 0
+LVDS_TX_0+
+$Comp
+L CONN_02X20 J4
+U 1 1 54CC6A70
+P 3950 2800
+F 0 "J4" H 3950 3850 50  0000 C CNN
+F 1 "CONN_02X20" V 3950 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 3950 1850 60  0001 C CNN
+F 3 "" H 3950 1850 60  0000 C CNN
+	1    3950 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 1950 0    39   Input ~ 0
+I2C_SDA
+Text GLabel 3550 2050 0    39   Input ~ 0
+GPIO_A
+Text GLabel 3550 2350 0    39   Input ~ 0
+LVDS_TX_B-
+Text GLabel 3550 2450 0    39   Input ~ 0
+LVDS_TX_A-
+Text GLabel 3550 2550 0    39   Input ~ 0
+LVDS_TX_9-
+Text GLabel 3550 3150 0    39   Input ~ 0
+LVDS_TX_5-
+Text GLabel 3550 3250 0    39   Input ~ 0
+LVDS_TX_4-
+Text GLabel 3550 3350 0    39   Input ~ 0
+LVDS_TX_3-
+Text GLabel 3550 2750 0    39   Input ~ 0
+LVDS_TX_8-
+Text GLabel 3550 2850 0    39   Input ~ 0
+LVDS_TX_7-
+Text GLabel 3550 2950 0    39   Input ~ 0
+LVDS_TX_6-
+Text GLabel 3550 3550 0    39   Input ~ 0
+LVDS_TX_2-
+Text GLabel 3550 3650 0    39   Input ~ 0
+LVDS_TX_1-
+Text GLabel 3550 3750 0    39   Input ~ 0
+LVDS_TX_0-
+Wire Wire Line
+	4200 1950 4350 1950
+Wire Wire Line
+	4200 2050 4350 2050
+Wire Wire Line
+	4200 2350 4350 2350
+Wire Wire Line
+	4350 2450 4200 2450
+Wire Wire Line
+	4350 2550 4200 2550
+Wire Wire Line
+	4350 2750 4200 2750
+Wire Wire Line
+	4350 2850 4200 2850
+Wire Wire Line
+	4350 2950 4200 2950
+Wire Wire Line
+	4350 3150 4200 3150
+Wire Wire Line
+	4350 3250 4200 3250
+Wire Wire Line
+	4350 3350 4200 3350
+Wire Wire Line
+	4350 3550 4200 3550
+Wire Wire Line
+	4350 3650 4200 3650
+Wire Wire Line
+	4350 3750 4200 3750
+Wire Wire Line
+	3550 3750 3700 3750
+Wire Wire Line
+	3550 3650 3700 3650
+Wire Wire Line
+	3550 3550 3700 3550
+Wire Wire Line
+	3550 3350 3700 3350
+Wire Wire Line
+	3550 3250 3700 3250
+Wire Wire Line
+	3550 3150 3700 3150
+Wire Wire Line
+	3550 2950 3700 2950
+Wire Wire Line
+	3550 2850 3700 2850
+Wire Wire Line
+	3550 2750 3700 2750
+Wire Wire Line
+	3550 2550 3700 2550
+Wire Wire Line
+	3550 2450 3700 2450
+Wire Wire Line
+	3550 2350 3700 2350
+Wire Wire Line
+	3550 2050 3700 2050
+Wire Wire Line
+	3550 1950 3700 1950
+Wire Wire Line
+	4200 2150 4300 2150
+Wire Wire Line
+	4300 2150 4300 3950
+Wire Wire Line
+	4300 2250 4200 2250
+$Comp
+L GND #GND013
+U 1 1 54CC773D
+P 4300 3950
+F 0 "#GND013" H 4300 3950 30  0001 C CNN
+F 1 "GND" H 4300 3880 30  0001 C CNN
+F 2 "" H 4300 3950 60  0000 C CNN
+F 3 "" H 4300 3950 60  0000 C CNN
+	1    4300 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 2250
+Wire Wire Line
+	4200 3450 4300 3450
+Connection ~ 4300 3450
+Wire Wire Line
+	4200 3050 4300 3050
+Connection ~ 4300 3050
+Wire Wire Line
+	4200 2650 4300 2650
+Connection ~ 4300 2650
+$Comp
+L GND #GND014
+U 1 1 54CC7923
+P 3600 3950
+F 0 "#GND014" H 3600 3950 30  0001 C CNN
+F 1 "GND" H 3600 3880 30  0001 C CNN
+F 2 "" H 3600 3950 60  0000 C CNN
+F 3 "" H 3600 3950 60  0000 C CNN
+	1    3600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2150 3600 2150
+Wire Wire Line
+	3600 2150 3600 3950
+Wire Wire Line
+	3700 3450 3600 3450
+Connection ~ 3600 3450
+Wire Wire Line
+	3700 3050 3600 3050
+Connection ~ 3600 3050
+Wire Wire Line
+	3700 2650 3600 2650
+Connection ~ 3600 2650
+Wire Wire Line
+	3700 2250 3600 2250
+Connection ~ 3600 2250
+Wire Wire Line
+	4200 4350 4350 4350
+Wire Wire Line
+	3700 4350 3550 4350
+Text GLabel 4350 4450 2    39   Input ~ 0
+GPIO_04
+Text GLabel 4350 4550 2    39   Input ~ 0
+GPIO_06
+Text GLabel 4350 4950 2    39   Input ~ 0
+GPIO_12
+Text GLabel 4350 5050 2    39   Input ~ 0
+DIFF_RX_B-
+Text GLabel 4350 5650 2    39   Input ~ 0
+DIFF_RX_5-
+Text GLabel 4350 5850 2    39   Input ~ 0
+DIFF_RX_4-
+Text GLabel 4350 5250 2    39   Input ~ 0
+DIFF_RX_9-
+Text GLabel 4350 5350 2    39   Input ~ 0
+DIFF_RX_8-
+Text GLabel 4350 5450 2    39   Input ~ 0
+DIFF_RX_7-
+Text GLabel 4350 6050 2    39   Input ~ 0
+DIFF_RX_2-
+Text GLabel 4350 6150 2    39   Input ~ 0
+DIFF_RX_1-
+Text GLabel 4350 6250 2    39   Input ~ 0
+DIFF_RX_0-
+$Comp
+L CONN_02X20 J5
+U 1 1 54CC7D2A
+P 3950 5300
+F 0 "J5" H 3950 6350 50  0000 C CNN
+F 1 "CONN_02X20" V 3950 5300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 3950 4350 60  0001 C CNN
+F 3 "" H 3950 4350 60  0000 C CNN
+	1    3950 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 4450 0    39   Input ~ 0
+GPIO_03
+Text GLabel 3550 4550 0    39   Input ~ 0
+GPIO_05
+Text GLabel 3550 4950 0    39   Input ~ 0
+GPIO_11
+Text GLabel 3550 5050 0    39   Input ~ 0
+DIFF_RX_B+
+Text GLabel 3550 5650 0    39   Input ~ 0
+DIFF_RX_5+
+Text GLabel 3550 5950 0    39   Input ~ 0
+DIFF_RX_3+
+Text GLabel 3550 5850 0    39   Input ~ 0
+DIFF_RX_4+
+Text GLabel 3550 5250 0    39   Input ~ 0
+DIFF_RX_9+
+Text GLabel 3550 5350 0    39   Input ~ 0
+DIFF_RX_8+
+Text GLabel 3550 5450 0    39   Input ~ 0
+DIFF_RX_7+
+Text GLabel 3550 6050 0    39   Input ~ 0
+DIFF_RX_2+
+Text GLabel 3550 6150 0    39   Input ~ 0
+DIFF_RX_1+
+Text GLabel 3550 6250 0    39   Input ~ 0
+DIFF_RX_0+
+Wire Wire Line
+	4200 4450 4350 4450
+Wire Wire Line
+	4200 4550 4350 4550
+Wire Wire Line
+	4350 4950 4200 4950
+Wire Wire Line
+	4350 5050 4200 5050
+Wire Wire Line
+	4350 5350 4200 5350
+Wire Wire Line
+	4350 5450 4200 5450
+Wire Wire Line
+	4350 5650 4200 5650
+Wire Wire Line
+	4350 5850 4200 5850
+Wire Wire Line
+	4350 6050 4200 6050
+Wire Wire Line
+	4350 6150 4200 6150
+Wire Wire Line
+	4350 6250 4200 6250
+Wire Wire Line
+	3550 6250 3700 6250
+Wire Wire Line
+	3550 6150 3700 6150
+Wire Wire Line
+	3550 6050 3700 6050
+Wire Wire Line
+	3550 5850 3700 5850
+Wire Wire Line
+	3550 5650 3700 5650
+Wire Wire Line
+	3550 5450 3700 5450
+Wire Wire Line
+	3550 5350 3700 5350
+Wire Wire Line
+	3550 5250 3700 5250
+Wire Wire Line
+	3550 5050 3700 5050
+Wire Wire Line
+	3550 4950 3700 4950
+Wire Wire Line
+	3550 4550 3700 4550
+Wire Wire Line
+	3550 4450 3700 4450
+Wire Wire Line
+	4200 4650 4350 4650
+Wire Wire Line
+	4350 4750 4200 4750
+$Comp
+L GND #GND015
+U 1 1 54CC7D5D
+P 4300 6450
+F 0 "#GND015" H 4300 6450 30  0001 C CNN
+F 1 "GND" H 4300 6380 30  0001 C CNN
+F 2 "" H 4300 6450 60  0000 C CNN
+F 3 "" H 4300 6450 60  0000 C CNN
+	1    4300 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5150 4350 5150
+Wire Wire Line
+	3700 4650 3550 4650
+Wire Wire Line
+	3700 5150 3550 5150
+Wire Wire Line
+	3700 4750 3550 4750
+Text GLabel 4350 4350 2    39   Input ~ 0
+GPIO_02
+Text GLabel 3550 4350 0    39   Input ~ 0
+GPIO_01
+Text GLabel 4350 4650 2    39   Input ~ 0
+GPIO_08
+Text GLabel 3550 4650 0    39   Input ~ 0
+GPIO_07
+Text GLabel 4350 4750 2    39   Input ~ 0
+GPIO_10
+Text GLabel 3550 4750 0    39   Input ~ 0
+GPIO_09
+Text GLabel 4350 5150 2    39   Input ~ 0
+DIFF_RX_A-
+Text GLabel 4350 5550 2    39   Input ~ 0
+DIFF_RX_6-
+Text GLabel 4350 5950 2    39   Input ~ 0
+DIFF_RX_3-
+Wire Wire Line
+	4200 5950 4350 5950
+Text GLabel 3550 5550 0    39   Input ~ 0
+DIFF_RX_6+
+Text GLabel 3550 5150 0    39   Input ~ 0
+DIFF_RX_A+
+Wire Wire Line
+	3550 5950 3700 5950
+Wire Wire Line
+	3700 5550 3550 5550
+Wire Wire Line
+	4200 5550 4350 5550
+Wire Wire Line
+	4200 5250 4350 5250
+Wire Wire Line
+	4200 5750 4300 5750
+Wire Wire Line
+	4300 4850 4300 6450
+Wire Wire Line
+	4200 4850 4300 4850
+Connection ~ 4300 5750
+$Comp
+L +5V #5V016
+U 1 1 54CC98BC
+P 3600 4200
+F 0 "#5V016" H 3600 4290 20  0001 C CNN
+F 1 "+5V" H 3600 4290 30  0000 C CNN
+F 2 "" H 3600 4200 60  0000 C CNN
+F 3 "" H 3600 4200 60  0000 C CNN
+	1    3600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4850 3600 4850
+Wire Wire Line
+	3600 4850 3600 4200
+$Comp
+L +3.3V #3V017
+U 1 1 54CC9A8E
+P 3600 6450
+F 0 "#3V017" H 3600 6410 30  0001 C CNN
+F 1 "+3.3V" H 3600 6560 30  0000 C CNN
+F 2 "" H 3600 6450 60  0000 C CNN
+F 3 "" H 3600 6450 60  0000 C CNN
+	1    3600 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 5750 3600 5750
+Wire Wire Line
+	3600 5750 3600 6450
+$EndSCHEMATC

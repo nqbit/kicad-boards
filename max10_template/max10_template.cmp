@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Fri 30 Jan 2015 09:19:37 PM PST
+
+BeginCmp
+TimeStamp = /54CC6A70;
+Reference = J4;
+ValeurCmp = CONN_02X20;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x20;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CC7D2A;
+Reference = J5;
+ValeurCmp = CONN_02X20;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x20;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CC46CB;
+Reference = J11;
+ValeurCmp = CONN_02X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CC4285;
+Reference = U5;
+ValeurCmp = CONN_02X06;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x06;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CC61D6;
+Reference = U6;
+ValeurCmp = CONN_02X06;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x06;
+EndCmp
+
+EndListe
