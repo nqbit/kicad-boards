@@ -200,19 +200,19 @@ F 3 "" H 2100 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2650 1550 0    60   Input ~ 0
-S1
-Text GLabel 3950 1550 0    60   Input ~ 0
-S2
-Text GLabel 5250 1550 0    60   Input ~ 0
-S3
-Text GLabel 2650 2850 0    60   Input ~ 0
-S4
-Text GLabel 3950 2850 0    60   Input ~ 0
 S5
-Text GLabel 5250 2850 0    60   Input ~ 0
-S6
-Text GLabel 800  600  0    60   Input ~ 0
+Text GLabel 3950 1550 0    60   Input ~ 0
+S3
+Text GLabel 5250 1550 0    60   Input ~ 0
 S1
+Text GLabel 2650 2850 0    60   Input ~ 0
+S6
+Text GLabel 3950 2850 0    60   Input ~ 0
+S4
+Text GLabel 5250 2850 0    60   Input ~ 0
+S2
+Text GLabel 800  600  0    60   Input ~ 0
+S5
 $Comp
 L C C7
 U 1 1 54D6FD41
@@ -247,7 +247,7 @@ F 3 "" H 950 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 600  0    60   Input ~ 0
-S2
+S3
 $Comp
 L C C8
 U 1 1 54D7084B
@@ -282,7 +282,7 @@ F 3 "" H 1650 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2200 600  0    60   Input ~ 0
-S3
+S1
 $Comp
 L C C9
 U 1 1 54D70BB2
@@ -317,7 +317,7 @@ F 3 "" H 2350 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2900 600  0    60   Input ~ 0
-S4
+S6
 $Comp
 L C C10
 U 1 1 54D70BCD
@@ -352,7 +352,7 @@ F 3 "" H 3050 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3600 600  0    60   Input ~ 0
-S5
+S4
 $Comp
 L C C11
 U 1 1 54D70DFC
@@ -387,7 +387,7 @@ F 3 "" H 3750 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4300 600  0    60   Input ~ 0
-S6
+S2
 $Comp
 L C C12
 U 1 1 54D70E17
@@ -444,10 +444,10 @@ F 3 "" H 8300 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #5V010
+L +5V #010
 U 1 1 54D72143
 P 8800 850
-F 0 "#5V010" H 8800 940 20  0001 C CNN
+F 0 "#010" H 8800 940 20  0001 C CNN
 F 1 "+5V" H 8800 940 30  0000 C CNN
 F 2 "" H 8800 850 60  0000 C CNN
 F 3 "" H 8800 850 60  0000 C CNN
@@ -992,8 +992,6 @@ Wire Wire Line
 Wire Wire Line
 	8700 950  9000 950 
 Wire Wire Line
-	8800 950  8800 850 
-Wire Wire Line
 	7800 850  7800 950 
 Wire Wire Line
 	7800 950  7900 950 
@@ -1528,4 +1526,7 @@ Wire Wire Line
 	6900 1000 6800 1000
 Wire Wire Line
 	6800 1000 6800 1100
+Wire Wire Line
+	8800 850  8800 950 
+Connection ~ 8800 950 
 $EndSCHEMATC
