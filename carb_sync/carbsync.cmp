@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Sat 07 Feb 2015 09:45:36 PM PST
+Cmp-Mod V01 Created by Cvpcb 0.201501062116+5355~20~ubuntu14.04.1-product   date = Sun 08 Feb 2015 06:51:51 PM PST
 
 BeginCmp
 TimeStamp = /54D6D4C4;
@@ -123,7 +123,7 @@ BeginCmp
 TimeStamp = /54D89B20;
 Reference = DS1;
 ValeurCmp = LCD-016N002L;
-IdModule  = Pin_Headers:Pin_Header_Straight_1x16;
+IdModule  = Connect:GS_8x2;
 EndCmp
 
 BeginCmp

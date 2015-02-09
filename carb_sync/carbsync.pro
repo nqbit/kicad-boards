@@ -1,4 +1,4 @@
-update=Sat 07 Feb 2015 09:39:17 PM PST
+update=Sun 08 Feb 2015 04:28:15 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -10,7 +10,7 @@ EquName1=devcms
 version=1
 [eeschema]
 version=1
-LibDir=/home/ndq/dev/kicad/parts/NQBit.pretty
+LibDir=/home/quasar/dev/boards/parts/NQBit.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -47,7 +47,7 @@ LibName31=nqbit
 version=1
 PageLayoutDescrFile=
 LastNetListRead=carbsync.net
-UseCmpFile=1
+UseCmpFile=0
 PadDrill=0.6
 PadDrillOvalY=0.6
 PadSizeH=1.5
