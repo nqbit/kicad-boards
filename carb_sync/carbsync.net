@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/quasar/dev/boards/kicad-boards/carb_sync/carbsync.sch)
-    (date "Sun 08 Feb 2015 06:52:58 PM PST")
+    (date "Tue 10 Feb 2015 02:18:13 AM PST")
     (tool "Eeschema 0.201501062116+5355~20~ubuntu14.04.1-product"))
   (components
     (comp (ref U1)
@@ -180,7 +180,7 @@
       (tstamp 54D78C44))
     (comp (ref X1)
       (value CRYSTAL)
-      (footprint Crystals:Crystal_HC52-U_Vertical)
+      (footprint NQBit:HC-49USX_SMD)
       (libsource (lib device) (part CRYSTAL))
       (sheetpath (names /) (tstamps /))
       (tstamp 54D795DF))
@@ -299,15 +299,6 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 54D6F898)))
   (libparts
-    (libpart (lib device) (part POT)
-      (description Potentionmetre)
-      (fields
-        (field (name Reference) RV)
-        (field (name Value) POT))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))))
     (libpart (lib device) (part R)
       (description Resistance)
       (footprints
@@ -322,6 +313,73 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part CP2)
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP2))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib device) (part C)
+      (description "Condensateur non polarise")
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part POT)
+      (description Potentionmetre)
+      (fields
+        (field (name Reference) RV)
+        (field (name Value) POT))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
+    (libpart (lib device) (part SPST)
+      (description "Interrupteur simple")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SPST))
+      (pins
+        (pin (num 1) (name 1) (type input))
+        (pin (num 2) (name 2) (type input))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
     (libpart (lib atmel) (part ATMEGA168A-A)
       (aliases
         (alias ATMEGA48A-A)
@@ -370,42 +428,36 @@
         (pin (num 30) (name "(PCINT16/RXD)PD0") (type BiDi))
         (pin (num 31) (name "(PCINT17/TXD)PD1") (type BiDi))
         (pin (num 32) (name "(PCINT18/INT0)PD2") (type BiDi))))
-    (libpart (lib device) (part SPST)
-      (description "Interrupteur simple")
-      (fields
-        (field (name Reference) SW)
-        (field (name Value) SPST))
-      (pins
-        (pin (num 1) (name 1) (type input))
-        (pin (num 2) (name 2) (type input))))
-    (libpart (lib device) (part LED)
+    (libpart (lib conn) (part CONN_02X03)
       (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
+        (fp Pin_Header_Straight_2X03)
+        (fp Pin_Header_Angled_2X03)
+        (fp Socket_Strip_Straight_2X03)
+        (fp Socket_Strip_Angled_2X03))
       (fields
-        (field (name Reference) D)
-        (field (name Value) LED))
+        (field (name Reference) P)
+        (field (name Value) CONN_02X03))
       (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib nqbit) (part MPXV6115V)
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))))
+    (libpart (lib regul) (part 7805)
+      (aliases
+        (alias LM7805)
+        (alias LM7812)
+        (alias 78L05))
+      (description "Linear Regulator +5V")
+      (docs regulator\lm78xx.pdf)
       (fields
         (field (name Reference) U)
-        (field (name Value) MPXV6115V))
+        (field (name Value) 7805))
       (pins
-        (pin (num 1) (name NC) (type NotConnected))
-        (pin (num 2) (name VCC) (type input))
-        (pin (num 3) (name GND) (type input))
-        (pin (num 4) (name VOUT) (type input))
-        (pin (num 5) (name NC) (type NotConnected))
-        (pin (num 6) (name NC) (type NotConnected))
-        (pin (num 7) (name NC) (type NotConnected))
-        (pin (num 8) (name NC) (type NotConnected))))
+        (pin (num GND) (name GND) (type input))
+        (pin (num VI) (name VI) (type input))
+        (pin (num VO) (name VO) (type power_out))))
     (libpart (lib display) (part LCD16X2)
       (aliases
         (alias LCD-016N002L))
@@ -432,91 +484,39 @@
         (pin (num 14) (name D7) (type input))
         (pin (num 15) (name LED+) (type passive))
         (pin (num 16) (name LED-) (type passive))))
-    (libpart (lib device) (part C)
-      (description "Condensateur non polarise")
-      (footprints
-        (fp SM*)
-        (fp C?)
-        (fp C1-1))
+    (libpart (lib nqbit) (part MPXV6115V)
       (fields
-        (field (name Reference) C)
-        (field (name Value) C))
+        (field (name Reference) U)
+        (field (name Value) MPXV6115V))
       (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib conn) (part CONN_02X03)
-      (footprints
-        (fp Pin_Header_Straight_2X03)
-        (fp Pin_Header_Angled_2X03)
-        (fp Socket_Strip_Straight_2X03)
-        (fp Socket_Strip_Angled_2X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_02X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib device) (part CP2)
-      (footprints
-        (fp SM*)
-        (fp C?)
-        (fp C1-1))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CP2))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
+        (pin (num 1) (name NC) (type NotConnected))
+        (pin (num 2) (name VCC) (type input))
+        (pin (num 3) (name GND) (type input))
+        (pin (num 4) (name VOUT) (type input))
+        (pin (num 5) (name NC) (type NotConnected))
+        (pin (num 6) (name NC) (type NotConnected))
+        (pin (num 7) (name NC) (type NotConnected))
+        (pin (num 8) (name NC) (type NotConnected))))
     (libpart (lib device) (part CRYSTAL)
       (fields
         (field (name Reference) X)
         (field (name Value) CRYSTAL))
       (pins
         (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib regul) (part 7805)
-      (aliases
-        (alias LM7805)
-        (alias LM7812)
-        (alias 78L05))
-      (description "Linear Regulator +5V")
-      (docs regulator\lm78xx.pdf)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) 7805))
-      (pins
-        (pin (num GND) (name GND) (type input))
-        (pin (num VI) (name VI) (type input))
-        (pin (num VO) (name VO) (type power_out)))))
+        (pin (num 2) (name 2) (type passive)))))
   (libraries
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
-    (library (logical atmel)
-      (uri /usr/share/kicad/library/atmel.lib))
-    (library (logical nqbit)
-      (uri /home/quasar/dev/boards/parts/NQBit.pretty/nqbit.lib))
-    (library (logical display)
-      (uri /usr/share/kicad/library/display.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical regul)
-      (uri /usr/share/kicad/library/regul.lib)))
+      (uri /usr/share/kicad/library/regul.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical display)
+      (uri /usr/share/kicad/library/display.lib))
+    (library (logical nqbit)
+      (uri /home/quasar/dev/boards/parts/NQBit.pretty/nqbit.lib))
+    (library (logical atmel)
+      (uri /usr/share/kicad/library/atmel.lib)))
   (nets
     (net (code 1) (name "Net-(C15-Pad1)")
       (node (ref IC1) (pin 20))
