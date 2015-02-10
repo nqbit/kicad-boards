@@ -1,4 +1,4 @@
-update=Sun 08 Feb 2015 04:28:15 PM PST
+update=Tue 10 Feb 2015 02:14:10 AM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -8,6 +8,26 @@ NetIExt=net
 EquName1=devcms
 [general]
 version=1
+[pcbnew]
+version=1
+PageLayoutDescrFile=
+LastNetListRead=carbsync.net
+UseCmpFile=0
+PadDrill=0.6
+PadDrillOvalY=0.6
+PadSizeH=1.5
+PadSizeV=1.5
+PcbTextSizeV=1.5
+PcbTextSizeH=1.5
+PcbTextThickness=0.3
+ModuleTextSizeV=1
+ModuleTextSizeH=1
+ModuleTextSizeThickness=0.15
+SolderMaskClearance=0
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.2
+BoardOutlineThickness=1
+ModuleOutlineThickness=0.15
 [eeschema]
 version=1
 LibDir=/home/quasar/dev/boards/parts/NQBit.pretty
@@ -43,23 +63,3 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=nqbit
-[pcbnew]
-version=1
-PageLayoutDescrFile=
-LastNetListRead=carbsync.net
-UseCmpFile=0
-PadDrill=0.6
-PadDrillOvalY=0.6
-PadSizeH=1.5
-PadSizeV=1.5
-PcbTextSizeV=1.5
-PcbTextSizeH=1.5
-PcbTextThickness=0.3
-ModuleTextSizeV=1
-ModuleTextSizeH=1
-ModuleTextSizeThickness=0.15
-SolderMaskClearance=0
-SolderMaskMinWidth=0
-DrawSegmentWidth=0.2
-BoardOutlineThickness=1
-ModuleOutlineThickness=0.15

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb 0.201501062116+5355~20~ubuntu14.04.1-product   date = Sun 08 Feb 2015 06:51:51 PM PST
+Cmp-Mod V01 Created by Cvpcb 0.201501062116+5355~20~ubuntu14.04.1-product   date = Tue 10 Feb 2015 02:18:08 AM PST
 
 BeginCmp
 TimeStamp = /54D6D4C4;
@@ -340,7 +340,7 @@ BeginCmp
 TimeStamp = /54D795DF;
 Reference = X1;
 ValeurCmp = CRYSTAL;
-IdModule  = Crystals:Crystal_HC52-U_Vertical;
+IdModule  = NQBit:HC-49USX_SMD;
 EndCmp
 
 EndListe
