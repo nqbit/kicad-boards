@@ -1,0 +1,122 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Fri 27 Feb 2015 09:16:08 PM PST
+
+BeginCmp
+TimeStamp = /54F15B73;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F132E5;
+Reference = C2;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1478F;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1FE3F;
+Reference = C4;
+ValeurCmp = ??;
+IdModule  = Capacitors_ThroughHole:Capacitor13x4RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F13206;
+Reference = C5;
+ValeurCmp = 0.01uF;
+IdModule  = Capacitors_ThroughHole:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F152B2;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1519E;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17EE6;
+Reference = D3;
+ValeurCmp = DIODE;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F13CD4;
+Reference = D4;
+ValeurCmp = DIODE;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1393D;
+Reference = L1;
+ValeurCmp = INDUCTOR;
+IdModule  = Inductors:SELF-WE-PD-XXL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1389E;
+Reference = Q1;
+ValeurCmp = MOS_N;
+IdModule  = Transistors_TO-247:TO-247_Vertical_Neutral123;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F15933;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1572E;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17D7F;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F149D9;
+Reference = RV1;
+ValeurCmp = 1k;
+IdModule  = Potentiometers:Potentiometer_Trimmer-Suntan-TSR-3386C;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F14BA7;
+Reference = RV2;
+ValeurCmp = 1k;
+IdModule  = Potentiometers:Potentiometer_Trimmer-Suntan-TSR-3386C;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F12BC5;
+Reference = U1;
+ValeurCmp = LM555N;
+IdModule  = Sockets_DIP:DIP-8__300;
+EndCmp
+
+EndListe
