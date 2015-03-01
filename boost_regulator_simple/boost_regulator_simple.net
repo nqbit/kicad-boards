@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/quasar/dev/boards/testboarddelete/boost_regulator_simple/boost_regulator_simple.sch)
-    (date "Sat 28 Feb 2015 06:02:30 PM PST")
+    (date "Sat 28 Feb 2015 09:00:46 PM PST")
     (tool "Eeschema 0.201502181246+5430~21~ubuntu14.04.1-product"))
   (components
     (comp (ref U1)
@@ -140,12 +140,30 @@
       (tstamp 54F2CBF9))
     (comp (ref Q1)
       (value MOSFET-N)
-      (footprint TO-247)
+      (footprint NQBit:TO-247_Vertical_Neutral123)
       (datasheet http://www.digikey.com/product-detail/en/C2M1000170D/C2M1000170D-ND/4399776)
       (libsource (lib nqbit) (part MOSFET-N))
       (sheetpath (names /) (tstamps /))
       (tstamp 54F3106E)))
   (libparts
+    (libpart (lib device) (part INDUCTOR)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib device) (part CP2)
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP2))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part C)
       (description "Condensateur non polarise")
       (footprints
@@ -158,44 +176,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part CP2)
-      (footprints
-        (fp SM*)
-        (fp C?)
-        (fp C1-1))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CP2))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part DIODE)
-      (description "Diode simple")
-      (footprints
-        (fp D?)
-        (fp S*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib device) (part INDUCTOR)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part POT)
-      (description Potentionmetre)
-      (fields
-        (field (name Reference) RV)
-        (field (name Value) POT))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))))
     (libpart (lib device) (part R)
       (description Resistance)
       (footprints
@@ -210,6 +190,26 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part DIODE)
+      (description "Diode simple")
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib device) (part POT)
+      (description Potentionmetre)
+      (fields
+        (field (name Reference) RV)
+        (field (name Value) POT))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
     (libpart (lib conn) (part CONN_01X01)
       (footprints
         (fp Pin_Header_Straight_1X01)
@@ -246,10 +246,10 @@
         (pin (num 2) (name D) (type passive))
         (pin (num 3) (name S) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical linear)
       (uri /usr/share/kicad/library/linear.lib))
     (library (logical nqbit)
