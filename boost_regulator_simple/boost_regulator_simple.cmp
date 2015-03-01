@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Fri 27 Feb 2015 09:16:08 PM PST
+Cmp-Mod V01 Created by Cvpcb 0.201502181246+5430~21~ubuntu14.04.1-product   date = Sat 28 Feb 2015 06:02:47 PM PST
 
 BeginCmp
 TimeStamp = /54F15B73;
@@ -71,9 +71,37 @@ IdModule  = Inductors:SELF-WE-PD-XXL;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F1389E;
+TimeStamp = /54F2CBF9;
+Reference = P1;
+ValeurCmp = CONN_01X01;
+IdModule  = NQBit:Screw_Terminal_x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2CADD;
+Reference = P2;
+ValeurCmp = CONN_01X01;
+IdModule  = NQBit:Screw_Terminal_x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F28B94;
+Reference = P3;
+ValeurCmp = CONN_01X01;
+IdModule  = NQBit:Screw_Terminal_x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F28DA9;
+Reference = P4;
+ValeurCmp = CONN_01X01;
+IdModule  = NQBit:Screw_Terminal_x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F3106E;
 Reference = Q1;
-ValeurCmp = MOS_N;
+ValeurCmp = MOSFET-N;
 IdModule  = Transistors_TO-247:TO-247_Vertical_Neutral123;
 EndCmp
 
@@ -102,14 +130,14 @@ BeginCmp
 TimeStamp = /54F149D9;
 Reference = RV1;
 ValeurCmp = 1k;
-IdModule  = Potentiometers:Potentiometer_Trimmer-Suntan-TSR-3386C;
+IdModule  = NQBit:Potentiometer_Thumbwheel;
 EndCmp
 
 BeginCmp
 TimeStamp = /54F14BA7;
 Reference = RV2;
 ValeurCmp = 1k;
-IdModule  = Potentiometers:Potentiometer_Trimmer-Suntan-TSR-3386C;
+IdModule  = NQBit:Potentiometer_Thumbwheel;
 EndCmp
 
 BeginCmp
