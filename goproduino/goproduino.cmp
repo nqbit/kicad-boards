@@ -1,0 +1,234 @@
+Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Fri 01 May 2015 11:05:35 PM PDT
+
+BeginCmp
+TimeStamp = /553E40E7;
+Reference = P1;
+ValeurCmp = CONN_02X30;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x30;
+EndCmp
+
+BeginCmp
+TimeStamp = /554472B5;
+Reference = R1;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554471E4;
+Reference = R2;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554473B8;
+Reference = R3;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554473B2;
+Reference = R4;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447535;
+Reference = R5;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5544752F;
+Reference = R6;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447541;
+Reference = R7;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5544753B;
+Reference = R8;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5544788B;
+Reference = R9;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447885;
+Reference = R10;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447897;
+Reference = R11;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447891;
+Reference = R12;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554478A3;
+Reference = R13;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5544789D;
+Reference = R14;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554478AF;
+Reference = R15;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447DE9;
+Reference = R16;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55447F6F;
+Reference = R17;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448063;
+Reference = R18;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448069;
+Reference = R19;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554481D7;
+Reference = R20;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554481DD;
+Reference = R21;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554481E3;
+Reference = R22;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /554481E9;
+Reference = R23;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448ADD;
+Reference = R24;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448AE3;
+Reference = R25;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448AE9;
+Reference = R26;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448AEF;
+Reference = R27;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448C36;
+Reference = R28;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448C3C;
+Reference = R29;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55448C42;
+Reference = R30;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /553E26E8;
+Reference = U1;
+ValeurCmp = gopro;
+IdModule  = NQBit:DD1B030HA1R500;
+EndCmp
+
+BeginCmp
+TimeStamp = /55446518;
+Reference = U2;
+ValeurCmp = gopro;
+IdModule  = NQBit:DD1B030HA1R500;
+EndCmp
+
+EndListe

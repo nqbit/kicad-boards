@@ -1,0 +1,1131 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nqbit
+LIBS:goproduino-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L gopro U1
+U 1 1 553E26E8
+P 3100 1350
+F 0 "U1" H 3100 1600 60  0000 C CNN
+F 1 "gopro" H 3100 1500 60  0000 C CNN
+F 2 "NQBit:DD1B030HA1R500" H 2000 1450 60  0001 C CNN
+F 3 "" H 2000 1450 60  0000 C CNN
+	1    3100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1350 2000 1350
+Text Label 800  1350 0    60   ~ 0
+CAM_PB_CB_VIDEO_OUT
+Wire Wire Line
+	800  1450 2000 1450
+Text Label 800  1450 0    60   ~ 0
+CAM_G_Y_VIDEO_OUT
+Wire Wire Line
+	800  1550 2000 1550
+Text Label 800  1550 0    60   ~ 0
+CAM_B_PR_CR_VIDEO_OUT
+Wire Wire Line
+	800  1650 2000 1650
+Text Label 800  1650 0    60   ~ 0
+CAM_USB_POWER_0
+Wire Wire Line
+	800  1750 2000 1750
+Text Label 800  1750 0    60   ~ 0
+CAM_USB_POWER_1
+Wire Wire Line
+	800  1850 2000 1850
+Text Label 800  1850 0    60   ~ 0
+CAM_USB_DATA_P
+Wire Wire Line
+	800  2250 2000 2250
+Text Label 800  2250 0    60   ~ 0
+CAM_L_AUDIO_OUT
+Wire Wire Line
+	800  2350 2000 2350
+Text Label 800  2350 0    60   ~ 0
+CAM_POWER_MODE_BUTTON
+Wire Wire Line
+	800  2150 2000 2150
+Text Label 800  2150 0    60   ~ 0
+CAM_R_AUDIO_OUT
+Wire Wire Line
+	800  1950 2000 1950
+Text Label 800  1950 0    60   ~ 0
+CAM_USB_DATA_N
+Wire Wire Line
+	800  2550 2000 2550
+Text Label 800  2550 0    60   ~ 0
+CAM_R_AUDIO_IN
+Wire Wire Line
+	800  2650 2000 2650
+Text Label 800  2650 0    60   ~ 0
+CAM_L_AUDIO_IN
+Wire Wire Line
+	800  2450 2000 2450
+Text Label 800  2450 0    60   ~ 0
+CAM_PLAYBACK
+Wire Wire Line
+	800  2750 2000 2750
+Text Label 800  2750 0    60   ~ 0
+CAM_IR_IN
+Wire Wire Line
+	800  2850 2000 2850
+Text Label 800  2850 0    60   ~ 0
+CAM_TRIGGER
+Wire Wire Line
+	800  3050 2000 3050
+Text Label 800  3050 0    60   ~ 0
+CAM_ID1
+Wire Wire Line
+	800  3150 2000 3150
+Text Label 800  3150 0    60   ~ 0
+CAM_ID2
+Wire Wire Line
+	800  3250 2000 3250
+Text Label 800  3250 0    60   ~ 0
+CAM_ID3
+Wire Wire Line
+	800  3350 2000 3350
+Text Label 800  3350 0    60   ~ 0
+CAM_ID4
+Wire Wire Line
+	800  3550 2000 3550
+Text Label 800  3550 0    60   ~ 0
+CAM_I2C_DATA
+Wire Wire Line
+	800  3650 2000 3650
+Text Label 800  3650 0    60   ~ 0
+CAM_I2C_CLOCK
+Wire Wire Line
+	5600 1950 4200 1950
+Text Label 5600 1950 2    60   ~ 0
+CAM_POWER_OUT_STANDBY
+Wire Wire Line
+	5600 2050 4200 2050
+Text Label 5600 2050 2    60   ~ 0
+CAM_POWER_OUT
+Wire Wire Line
+	5600 2150 4200 2150
+Text Label 5600 2150 2    60   ~ 0
+CAM_BATTERY_IN_0
+Wire Wire Line
+	5600 2250 4200 2250
+Text Label 5600 2250 2    60   ~ 0
+CAM_BATTERY_IN_1
+$Comp
+L CONN_02X30 P1
+U 1 1 553E40E7
+P 2350 5700
+F 0 "P1" H 2350 7250 50  0000 C CNN
+F 1 "CONN_02X30" V 2350 5700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x30" H 2350 5200 60  0001 C CNN
+F 3 "" H 2350 5200 60  0000 C CNN
+	1    2350 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  4350 2100 4350
+Text Label 850  4350 0    60   ~ 0
+CAM_PB_CB_VIDEO_OUT
+Wire Wire Line
+	850  4450 2100 4450
+Text Label 850  4450 0    60   ~ 0
+CAM_G_Y_VIDEO_OUT
+Wire Wire Line
+	850  4550 2100 4550
+Text Label 850  4550 0    60   ~ 0
+CAM_B_PR_CR_VIDEO_OUT
+Wire Wire Line
+	850  4650 2100 4650
+Text Label 850  4650 0    60   ~ 0
+CAM_USB_POWER
+Wire Wire Line
+	850  4750 2100 4750
+Text Label 850  4750 0    60   ~ 0
+CAM_USB_POWER
+Wire Wire Line
+	850  4850 2100 4850
+Text Label 850  4850 0    60   ~ 0
+CAM_USB_DATA_P
+Wire Wire Line
+	850  4950 2100 4950
+Text Label 850  4950 0    60   ~ 0
+CAM_USB_DATA_N
+Wire Wire Line
+	850  5250 2100 5250
+Text Label 850  5250 0    60   ~ 0
+CAM_L_AUDIO_OUT
+Wire Wire Line
+	850  5350 2100 5350
+Text Label 850  5350 0    60   ~ 0
+CAM_POWER_MODE_BUTTON
+Wire Wire Line
+	850  5150 2100 5150
+Text Label 850  5150 0    60   ~ 0
+CAM_R_AUDIO_OUT
+Wire Wire Line
+	850  5550 2100 5550
+Text Label 850  5550 0    60   ~ 0
+CAM_R_AUDIO_IN
+Wire Wire Line
+	850  5650 2100 5650
+Text Label 850  5650 0    60   ~ 0
+CAM_L_AUDIO_IN
+Wire Wire Line
+	850  5450 2100 5450
+Text Label 850  5450 0    60   ~ 0
+CAM_PLAYBACK
+Wire Wire Line
+	850  5750 2100 5750
+Text Label 850  5750 0    60   ~ 0
+CAM_IR_IN
+Wire Wire Line
+	850  5850 2100 5850
+Text Label 850  5850 0    60   ~ 0
+CAM_TRIGGER
+Wire Wire Line
+	850  6050 2100 6050
+Text Label 850  6050 0    60   ~ 0
+CAM_ID1
+Wire Wire Line
+	850  6150 2100 6150
+Text Label 850  6150 0    60   ~ 0
+CAM_ID2
+Wire Wire Line
+	850  6250 2100 6250
+Text Label 850  6250 0    60   ~ 0
+CAM_ID3
+Wire Wire Line
+	850  6350 2100 6350
+Text Label 850  6350 0    60   ~ 0
+CAM_ID4
+Wire Wire Line
+	850  6450 2100 6450
+Text Label 850  6450 0    60   ~ 0
+CAM_POWER_OUT_STANDBY
+Wire Wire Line
+	850  6550 2100 6550
+Text Label 850  6550 0    60   ~ 0
+CAM_POWER_OUT
+Wire Wire Line
+	850  6650 2100 6650
+Text Label 850  6650 0    60   ~ 0
+CAM_BATTERY_IN
+Wire Wire Line
+	850  6750 2100 6750
+Text Label 850  6750 0    60   ~ 0
+CAM_BATTERY_IN
+Wire Wire Line
+	850  6950 2100 6950
+Text Label 850  6950 0    60   ~ 0
+CAM_I2C_DATA
+Wire Wire Line
+	850  7050 2100 7050
+Text Label 850  7050 0    60   ~ 0
+CAM_I2C_CLOCK
+Wire Wire Line
+	3650 4350 2600 4350
+Text Label 3650 4350 2    60   ~ 0
+PB_CB_VIDEO_OUT
+Wire Wire Line
+	3650 4450 2600 4450
+Text Label 3650 4450 2    60   ~ 0
+G_Y_VIDEO_OUT
+Wire Wire Line
+	3650 4550 2600 4550
+Text Label 3650 4550 2    60   ~ 0
+B_PR_CR_VIDEO_OUT
+Wire Wire Line
+	3650 4650 2600 4650
+Text Label 3650 4650 2    60   ~ 0
+USB_POWER
+Wire Wire Line
+	3650 4750 2600 4750
+Text Label 3650 4750 2    60   ~ 0
+USB_POWER
+Wire Wire Line
+	3650 4850 2600 4850
+Text Label 3650 4850 2    60   ~ 0
+USB_DATA_P
+Wire Wire Line
+	3650 4950 2600 4950
+Text Label 3650 4950 2    60   ~ 0
+USB_DATA_N
+Wire Wire Line
+	3650 5250 2600 5250
+Text Label 3650 5250 2    60   ~ 0
+L_AUDIO_OUT
+Wire Wire Line
+	3650 5350 2600 5350
+Text Label 3650 5350 2    60   ~ 0
+POWER_MODE_BUTTON
+Wire Wire Line
+	3650 5150 2600 5150
+Text Label 3650 5150 2    60   ~ 0
+R_AUDIO_OUT
+Wire Wire Line
+	3650 5550 2600 5550
+Text Label 3650 5550 2    60   ~ 0
+R_AUDIO_IN
+Wire Wire Line
+	3650 5650 2600 5650
+Text Label 3650 5650 2    60   ~ 0
+L_AUDIO_IN
+Wire Wire Line
+	3650 5450 2600 5450
+Text Label 3650 5450 2    60   ~ 0
+PLAYBACK
+Wire Wire Line
+	3650 5750 2600 5750
+Text Label 3650 5750 2    60   ~ 0
+IR_IN
+Wire Wire Line
+	3650 5850 2600 5850
+Text Label 3650 5850 2    60   ~ 0
+TRIGGER
+Wire Wire Line
+	3650 6050 2600 6050
+Text Label 3650 6050 2    60   ~ 0
+ID1
+Wire Wire Line
+	3650 6150 2600 6150
+Text Label 3650 6150 2    60   ~ 0
+ID2
+Wire Wire Line
+	3650 6250 2600 6250
+Text Label 3650 6250 2    60   ~ 0
+ID3
+Wire Wire Line
+	3650 6350 2600 6350
+Text Label 3650 6350 2    60   ~ 0
+ID4
+Wire Wire Line
+	3650 6450 2600 6450
+Text Label 3650 6450 2    60   ~ 0
+POWER_OUT_STANDBY
+Wire Wire Line
+	3650 6550 2600 6550
+Text Label 3650 6550 2    60   ~ 0
+POWER_OUT
+Wire Wire Line
+	3650 6650 2600 6650
+Text Label 3650 6650 2    60   ~ 0
+BATTERY_IN
+Wire Wire Line
+	3650 6750 2600 6750
+Text Label 3650 6750 2    60   ~ 0
+BATTERY_IN
+Wire Wire Line
+	3650 6950 2600 6950
+Text Label 3650 6950 2    60   ~ 0
+I2C_DATA
+Wire Wire Line
+	3650 7050 2600 7050
+Text Label 3650 7050 2    60   ~ 0
+I2C_CLOCK
+$Comp
+L gopro U2
+U 1 1 55446518
+P 8400 1350
+F 0 "U2" H 8400 1600 60  0000 C CNN
+F 1 "gopro" H 8400 1500 60  0000 C CNN
+F 2 "NQBit:DD1B030HA1R500" H 7300 1450 60  0001 C CNN
+F 3 "" H 7300 1450 60  0000 C CNN
+	1    8400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1350 7300 1350
+Text Label 6100 1350 0    60   ~ 0
+DEV_PB_CB_VIDEO_OUT
+Wire Wire Line
+	6100 1450 7300 1450
+Text Label 6100 1450 0    60   ~ 0
+DEV_G_Y_VIDEO_OUT
+Wire Wire Line
+	6100 1550 7300 1550
+Text Label 6100 1550 0    60   ~ 0
+DEV_B_PR_CR_VIDEO_OUT
+Wire Wire Line
+	6100 1650 7300 1650
+Text Label 6100 1650 0    60   ~ 0
+DEV_USB_POWER
+Wire Wire Line
+	6100 1750 7300 1750
+Text Label 6100 1750 0    60   ~ 0
+DEV_USB_POWER
+Wire Wire Line
+	6100 1850 7300 1850
+Text Label 6100 1850 0    60   ~ 0
+DEV_USB_DATA_P
+Wire Wire Line
+	6100 2250 7300 2250
+Text Label 6100 2250 0    60   ~ 0
+DEV_L_AUDIO_OUT
+Wire Wire Line
+	6100 2350 7300 2350
+Text Label 6100 2350 0    60   ~ 0
+DEV_POWER_MODE_BUTTON
+Wire Wire Line
+	6100 2150 7300 2150
+Text Label 6100 2150 0    60   ~ 0
+DEV_R_AUDIO_OUT
+Wire Wire Line
+	6100 1950 7300 1950
+Text Label 6100 1950 0    60   ~ 0
+DEV_USB_DATA_N
+Wire Wire Line
+	6100 2550 7300 2550
+Text Label 6100 2550 0    60   ~ 0
+DEV_R_AUDIO_IN
+Wire Wire Line
+	6100 2650 7300 2650
+Text Label 6100 2650 0    60   ~ 0
+DEV_L_AUDIO_IN
+Wire Wire Line
+	6100 2450 7300 2450
+Text Label 6100 2450 0    60   ~ 0
+DEV_PLAYBACK
+Wire Wire Line
+	6100 2750 7300 2750
+Text Label 6100 2750 0    60   ~ 0
+DEV_IR_IN
+Wire Wire Line
+	6100 2850 7300 2850
+Text Label 6100 2850 0    60   ~ 0
+DEV_TRIGGER
+Wire Wire Line
+	6100 3050 7300 3050
+Text Label 6100 3050 0    60   ~ 0
+DEV_ID1
+Wire Wire Line
+	6100 3150 7300 3150
+Text Label 6100 3150 0    60   ~ 0
+DEV_ID2
+Wire Wire Line
+	6100 3250 7300 3250
+Text Label 6100 3250 0    60   ~ 0
+DEV_ID3
+Wire Wire Line
+	6100 3350 7300 3350
+Text Label 6100 3350 0    60   ~ 0
+DEV_ID4
+Wire Wire Line
+	6100 3550 7300 3550
+Text Label 6100 3550 0    60   ~ 0
+DEV_I2C_DATA
+Wire Wire Line
+	6100 3650 7300 3650
+Text Label 6100 3650 0    60   ~ 0
+DEV_I2C_CLOCK
+Wire Wire Line
+	10900 1950 9500 1950
+Text Label 10900 1950 2    60   ~ 0
+DEV_POWER_OUT_STANDBY
+Wire Wire Line
+	10900 2050 9500 2050
+Text Label 10900 2050 2    60   ~ 0
+DEV_POWER_OUT
+Wire Wire Line
+	10900 2150 9500 2150
+Text Label 10900 2150 2    60   ~ 0
+DEV_BATTERY_IN
+Wire Wire Line
+	10900 2250 9500 2250
+Text Label 10900 2250 2    60   ~ 0
+DEV_BATTERY_IN
+Wire Wire Line
+	4800 1350 4200 1350
+Text Label 4800 1350 2    60   ~ 0
+CAM_GND0
+Wire Wire Line
+	4800 1450 4200 1450
+Text Label 4800 1450 2    60   ~ 0
+CAM_GND1
+Wire Wire Line
+	4800 1550 4200 1550
+Text Label 4800 1550 2    60   ~ 0
+CAM_GND2
+Wire Wire Line
+	4800 1650 4200 1650
+Text Label 4800 1650 2    60   ~ 0
+CAM_GND3
+Wire Wire Line
+	4800 1750 4200 1750
+Text Label 4800 1750 2    60   ~ 0
+CAM_GND4
+Wire Wire Line
+	2100 4250 850  4250
+Text Label 850  4250 0    60   ~ 0
+CAM_GND0
+Wire Wire Line
+	2100 5050 850  5050
+Text Label 850  5050 0    60   ~ 0
+CAM_GND1
+Wire Wire Line
+	2100 5950 850  5950
+Text Label 850  5950 0    60   ~ 0
+CAM_GND2
+Wire Wire Line
+	2100 6850 850  6850
+Text Label 850  6850 0    60   ~ 0
+CAM_GND3
+Wire Wire Line
+	2100 7150 850  7150
+Text Label 850  7150 0    60   ~ 0
+CAM_GND4
+Wire Wire Line
+	10100 1350 9500 1350
+Text Label 10100 1350 2    60   ~ 0
+DEV_GND0
+Wire Wire Line
+	10100 1450 9500 1450
+Text Label 10100 1450 2    60   ~ 0
+DEV_GND1
+Wire Wire Line
+	10100 1550 9500 1550
+Text Label 10100 1550 2    60   ~ 0
+DEV_GND2
+Wire Wire Line
+	10100 1650 9500 1650
+Text Label 10100 1650 2    60   ~ 0
+DEV_GND3
+Wire Wire Line
+	10100 1750 9500 1750
+Text Label 10100 1750 2    60   ~ 0
+DEV_GND4
+Wire Wire Line
+	3650 4250 2600 4250
+Text Label 3650 4250 2    60   ~ 0
+GND0
+Wire Wire Line
+	3650 5050 2600 5050
+Text Label 3650 5050 2    60   ~ 0
+GND1
+Wire Wire Line
+	3650 5950 2600 5950
+Text Label 3650 5950 2    60   ~ 0
+GND2
+Wire Wire Line
+	3650 6850 2600 6850
+Text Label 3650 6850 2    60   ~ 0
+GND3
+Wire Wire Line
+	3650 7150 2600 7150
+Text Label 3650 7150 2    60   ~ 0
+GND4
+$Comp
+L R R2
+U 1 1 554471E4
+P 6050 4250
+F 0 "R2" V 6130 4250 50  0000 C CNN
+F 1 "0" V 6057 4251 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4250 30  0001 C CNN
+F 3 "" H 6050 4250 30  0000 C CNN
+	1    6050 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 554472B5
+P 6050 4100
+F 0 "R1" V 6130 4100 50  0000 C CNN
+F 1 "0" V 6057 4101 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4100 30  0001 C CNN
+F 3 "" H 6050 4100 30  0000 C CNN
+	1    6050 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 554473B2
+P 6050 4550
+F 0 "R4" V 6130 4550 50  0000 C CNN
+F 1 "0" V 6057 4551 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4550 30  0001 C CNN
+F 3 "" H 6050 4550 30  0000 C CNN
+	1    6050 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 554473B8
+P 6050 4400
+F 0 "R3" V 6130 4400 50  0000 C CNN
+F 1 "0" V 6057 4401 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4400 30  0001 C CNN
+F 3 "" H 6050 4400 30  0000 C CNN
+	1    6050 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5544752F
+P 6050 4850
+F 0 "R6" V 6130 4850 50  0000 C CNN
+F 1 "0" V 6057 4851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4850 30  0001 C CNN
+F 3 "" H 6050 4850 30  0000 C CNN
+	1    6050 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 55447535
+P 6050 4700
+F 0 "R5" V 6130 4700 50  0000 C CNN
+F 1 "0" V 6057 4701 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4700 30  0001 C CNN
+F 3 "" H 6050 4700 30  0000 C CNN
+	1    6050 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 5544753B
+P 6050 5150
+F 0 "R8" V 6130 5150 50  0000 C CNN
+F 1 "0" V 6057 5151 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5150 30  0001 C CNN
+F 3 "" H 6050 5150 30  0000 C CNN
+	1    6050 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 55447541
+P 6050 5000
+F 0 "R7" V 6130 5000 50  0000 C CNN
+F 1 "0" V 6057 5001 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5000 30  0001 C CNN
+F 3 "" H 6050 5000 30  0000 C CNN
+	1    6050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 55447885
+P 6050 5450
+F 0 "R10" V 6130 5450 50  0000 C CNN
+F 1 "0" V 6057 5451 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5450 30  0001 C CNN
+F 3 "" H 6050 5450 30  0000 C CNN
+	1    6050 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5544788B
+P 6050 5300
+F 0 "R9" V 6130 5300 50  0000 C CNN
+F 1 "0" V 6057 5301 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5300 30  0001 C CNN
+F 3 "" H 6050 5300 30  0000 C CNN
+	1    6050 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 55447891
+P 6050 5750
+F 0 "R12" V 6130 5750 50  0000 C CNN
+F 1 "0" V 6057 5751 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5750 30  0001 C CNN
+F 3 "" H 6050 5750 30  0000 C CNN
+	1    6050 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 55447897
+P 6050 5600
+F 0 "R11" V 6130 5600 50  0000 C CNN
+F 1 "0" V 6057 5601 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5600 30  0001 C CNN
+F 3 "" H 6050 5600 30  0000 C CNN
+	1    6050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 5544789D
+P 6050 6050
+F 0 "R14" V 6130 6050 50  0000 C CNN
+F 1 "0" V 6057 6051 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 6050 30  0001 C CNN
+F 3 "" H 6050 6050 30  0000 C CNN
+	1    6050 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 554478A3
+P 6050 5900
+F 0 "R13" V 6130 5900 50  0000 C CNN
+F 1 "0" V 6057 5901 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 5900 30  0001 C CNN
+F 3 "" H 6050 5900 30  0000 C CNN
+	1    6050 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 554478AF
+P 6050 6200
+F 0 "R15" V 6130 6200 50  0000 C CNN
+F 1 "0" V 6057 6201 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 6200 30  0001 C CNN
+F 3 "" H 6050 6200 30  0000 C CNN
+	1    6050 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4250 5800 4250
+Text Label 4750 4250 0    60   ~ 0
+PB_CB_VIDEO_OUT
+Wire Wire Line
+	4750 4400 5800 4400
+Text Label 4750 4400 0    60   ~ 0
+G_Y_VIDEO_OUT
+Wire Wire Line
+	4750 4550 5800 4550
+Text Label 4750 4550 0    60   ~ 0
+B_PR_CR_VIDEO_OUT
+Wire Wire Line
+	4750 4700 5800 4700
+Text Label 4750 4700 0    60   ~ 0
+USB_POWER
+Wire Wire Line
+	4750 4850 5800 4850
+Text Label 4750 4850 0    60   ~ 0
+USB_POWER
+Wire Wire Line
+	4750 5000 5800 5000
+Text Label 4750 5000 0    60   ~ 0
+USB_DATA_P
+Wire Wire Line
+	4750 5150 5800 5150
+Text Label 4750 5150 0    60   ~ 0
+USB_DATA_N
+Wire Wire Line
+	4750 5600 5800 5600
+Text Label 4750 5600 0    60   ~ 0
+L_AUDIO_OUT
+Wire Wire Line
+	4750 5750 5800 5750
+Text Label 4750 5750 0    60   ~ 0
+POWER_MODE_BUTTON
+Wire Wire Line
+	4750 5450 5800 5450
+Text Label 4750 5450 0    60   ~ 0
+R_AUDIO_OUT
+Wire Wire Line
+	4750 6050 5800 6050
+Text Label 4750 6050 0    60   ~ 0
+R_AUDIO_IN
+Wire Wire Line
+	4750 6200 5800 6200
+Text Label 4750 6200 0    60   ~ 0
+L_AUDIO_IN
+Wire Wire Line
+	4750 5900 5800 5900
+Text Label 4750 5900 0    60   ~ 0
+PLAYBACK
+Wire Wire Line
+	7950 4100 9000 4100
+Text Label 7950 4100 0    60   ~ 0
+IR_IN
+Wire Wire Line
+	7950 4250 9000 4250
+Text Label 7950 4250 0    60   ~ 0
+TRIGGER
+Wire Wire Line
+	7950 4550 9000 4550
+Text Label 7950 4550 0    60   ~ 0
+ID1
+Wire Wire Line
+	7950 4700 9000 4700
+Text Label 7950 4700 0    60   ~ 0
+ID2
+Wire Wire Line
+	7950 4850 9000 4850
+Text Label 7950 4850 0    60   ~ 0
+ID3
+Wire Wire Line
+	7950 5000 9000 5000
+Text Label 7950 5000 0    60   ~ 0
+ID4
+Wire Wire Line
+	7950 5150 9000 5150
+Text Label 7950 5150 0    60   ~ 0
+POWER_OUT_STANDBY
+Wire Wire Line
+	7950 5300 9000 5300
+Text Label 7950 5300 0    60   ~ 0
+POWER_OUT
+Wire Wire Line
+	7950 5450 9000 5450
+Text Label 7950 5450 0    60   ~ 0
+BATTERY_IN
+Wire Wire Line
+	7950 5600 9000 5600
+Text Label 7950 5600 0    60   ~ 0
+BATTERY_IN
+Wire Wire Line
+	7950 5900 9000 5900
+Text Label 7950 5900 0    60   ~ 0
+I2C_DATA
+Wire Wire Line
+	7950 6050 9000 6050
+Text Label 7950 6050 0    60   ~ 0
+I2C_CLOCK
+Wire Wire Line
+	4750 4100 5800 4100
+Text Label 4750 4100 0    60   ~ 0
+GND0
+Wire Wire Line
+	4750 5300 5800 5300
+Text Label 4750 5300 0    60   ~ 0
+GND1
+Wire Wire Line
+	7950 4400 9000 4400
+Text Label 7950 4400 0    60   ~ 0
+GND2
+Wire Wire Line
+	7950 5750 9000 5750
+Text Label 7950 5750 0    60   ~ 0
+GND3
+Wire Wire Line
+	7950 6200 9000 6200
+Text Label 7950 6200 0    60   ~ 0
+GND4
+$Comp
+L R R16
+U 1 1 55447DE9
+P 9250 4100
+F 0 "R16" V 9330 4100 50  0000 C CNN
+F 1 "R" V 9257 4101 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 4100 30  0001 C CNN
+F 3 "" H 9250 4100 30  0000 C CNN
+	1    9250 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 55447F6F
+P 9250 4250
+F 0 "R17" V 9330 4250 50  0000 C CNN
+F 1 "R" V 9257 4251 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 4250 30  0001 C CNN
+F 3 "" H 9250 4250 30  0000 C CNN
+	1    9250 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R18
+U 1 1 55448063
+P 9250 4400
+F 0 "R18" V 9330 4400 50  0000 C CNN
+F 1 "R" V 9257 4401 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 4400 30  0001 C CNN
+F 3 "" H 9250 4400 30  0000 C CNN
+	1    9250 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R19
+U 1 1 55448069
+P 9250 4550
+F 0 "R19" V 9330 4550 50  0000 C CNN
+F 1 "R" V 9257 4551 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 4550 30  0001 C CNN
+F 3 "" H 9250 4550 30  0000 C CNN
+	1    9250 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R20
+U 1 1 554481D7
+P 9250 4700
+F 0 "R20" V 9330 4700 50  0000 C CNN
+F 1 "R" V 9257 4701 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 4700 30  0001 C CNN
+F 3 "" H 9250 4700 30  0000 C CNN
+	1    9250 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R21
+U 1 1 554481DD
+P 9250 4850
+F 0 "R21" V 9330 4850 50  0000 C CNN
+F 1 "R" V 9257 4851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 4850 30  0001 C CNN
+F 3 "" H 9250 4850 30  0000 C CNN
+	1    9250 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R22
+U 1 1 554481E3
+P 9250 5000
+F 0 "R22" V 9330 5000 50  0000 C CNN
+F 1 "R" V 9257 5001 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5000 30  0001 C CNN
+F 3 "" H 9250 5000 30  0000 C CNN
+	1    9250 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R23
+U 1 1 554481E9
+P 9250 5150
+F 0 "R23" V 9330 5150 50  0000 C CNN
+F 1 "R" V 9257 5151 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5150 30  0001 C CNN
+F 3 "" H 9250 5150 30  0000 C CNN
+	1    9250 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R24
+U 1 1 55448ADD
+P 9250 5300
+F 0 "R24" V 9330 5300 50  0000 C CNN
+F 1 "R" V 9257 5301 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5300 30  0001 C CNN
+F 3 "" H 9250 5300 30  0000 C CNN
+	1    9250 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R25
+U 1 1 55448AE3
+P 9250 5450
+F 0 "R25" V 9330 5450 50  0000 C CNN
+F 1 "R" V 9257 5451 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5450 30  0001 C CNN
+F 3 "" H 9250 5450 30  0000 C CNN
+	1    9250 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R26
+U 1 1 55448AE9
+P 9250 5600
+F 0 "R26" V 9330 5600 50  0000 C CNN
+F 1 "R" V 9257 5601 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5600 30  0001 C CNN
+F 3 "" H 9250 5600 30  0000 C CNN
+	1    9250 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R27
+U 1 1 55448AEF
+P 9250 5750
+F 0 "R27" V 9330 5750 50  0000 C CNN
+F 1 "R" V 9257 5751 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5750 30  0001 C CNN
+F 3 "" H 9250 5750 30  0000 C CNN
+	1    9250 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R28
+U 1 1 55448C36
+P 9250 5900
+F 0 "R28" V 9330 5900 50  0000 C CNN
+F 1 "R" V 9257 5901 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 5900 30  0001 C CNN
+F 3 "" H 9250 5900 30  0000 C CNN
+	1    9250 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R29
+U 1 1 55448C3C
+P 9250 6050
+F 0 "R29" V 9330 6050 50  0000 C CNN
+F 1 "R" V 9257 6051 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 6050 30  0001 C CNN
+F 3 "" H 9250 6050 30  0000 C CNN
+	1    9250 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R30
+U 1 1 55448C42
+P 9250 6200
+F 0 "R30" V 9330 6200 50  0000 C CNN
+F 1 "R" V 9257 6201 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9180 6200 30  0001 C CNN
+F 3 "" H 9250 6200 30  0000 C CNN
+	1    9250 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 4250 6300 4250
+Text Label 7500 4250 2    60   ~ 0
+DEV_PB_CB_VIDEO_OUT
+Wire Wire Line
+	7500 4400 6300 4400
+Text Label 7500 4400 2    60   ~ 0
+DEV_G_Y_VIDEO_OUT
+Wire Wire Line
+	7500 4550 6300 4550
+Text Label 7500 4550 2    60   ~ 0
+DEV_B_PR_CR_VIDEO_OUT
+Wire Wire Line
+	7500 4700 6300 4700
+Text Label 7500 4700 2    60   ~ 0
+DEV_USB_POWER
+Wire Wire Line
+	7500 4850 6300 4850
+Text Label 7500 4850 2    60   ~ 0
+DEV_USB_POWER
+Wire Wire Line
+	7500 5000 6300 5000
+Text Label 7500 5000 2    60   ~ 0
+DEV_USB_DATA_P
+Wire Wire Line
+	7500 5150 6300 5150
+Text Label 7500 5150 2    60   ~ 0
+DEV_USB_DATA_N
+Wire Wire Line
+	7500 5600 6300 5600
+Text Label 7500 5600 2    60   ~ 0
+DEV_L_AUDIO_OUT
+Wire Wire Line
+	7500 5750 6300 5750
+Text Label 7500 5750 2    60   ~ 0
+DEV_POWER_MODE_BUTTON
+Wire Wire Line
+	7500 5450 6300 5450
+Text Label 7500 5450 2    60   ~ 0
+DEV_R_AUDIO_OUT
+Wire Wire Line
+	7500 6050 6300 6050
+Text Label 7500 6050 2    60   ~ 0
+DEV_R_AUDIO_IN
+Wire Wire Line
+	7500 6200 6300 6200
+Text Label 7500 6200 2    60   ~ 0
+DEV_L_AUDIO_IN
+Wire Wire Line
+	7500 5900 6300 5900
+Text Label 7500 5900 2    60   ~ 0
+DEV_PLAYBACK
+Wire Wire Line
+	7500 4100 6300 4100
+Text Label 7500 4100 2    60   ~ 0
+DEV_GND0
+Wire Wire Line
+	7500 5300 6300 5300
+Text Label 7500 5300 2    60   ~ 0
+DEV_GND1
+Wire Wire Line
+	10700 4100 9500 4100
+Text Label 10700 4100 2    60   ~ 0
+DEV_IR_IN
+Wire Wire Line
+	10700 4250 9500 4250
+Text Label 10700 4250 2    60   ~ 0
+DEV_TRIGGER
+Wire Wire Line
+	10700 4550 9500 4550
+Text Label 10700 4550 2    60   ~ 0
+DEV_ID1
+Wire Wire Line
+	10700 4700 9500 4700
+Text Label 10700 4700 2    60   ~ 0
+DEV_ID2
+Wire Wire Line
+	10700 4850 9500 4850
+Text Label 10700 4850 2    60   ~ 0
+DEV_ID3
+Wire Wire Line
+	10700 5000 9500 5000
+Text Label 10700 5000 2    60   ~ 0
+DEV_ID4
+Wire Wire Line
+	10700 5150 9500 5150
+Text Label 10700 5150 2    60   ~ 0
+DEV_POWER_OUT_STANDBY
+Wire Wire Line
+	10700 5300 9500 5300
+Text Label 10700 5300 2    60   ~ 0
+DEV_POWER_OUT
+Wire Wire Line
+	10700 5450 9500 5450
+Text Label 10700 5450 2    60   ~ 0
+DEV_BATTERY_IN
+Wire Wire Line
+	10700 5600 9500 5600
+Text Label 10700 5600 2    60   ~ 0
+DEV_BATTERY_IN
+Wire Wire Line
+	10700 5900 9500 5900
+Text Label 10700 5900 2    60   ~ 0
+DEV_I2C_DATA
+Wire Wire Line
+	10700 6050 9500 6050
+Text Label 10700 6050 2    60   ~ 0
+DEV_I2C_CLOCK
+Wire Wire Line
+	10700 4400 9500 4400
+Text Label 10700 4400 2    60   ~ 0
+DEV_GND2
+Wire Wire Line
+	10700 5750 9500 5750
+Text Label 10700 5750 2    60   ~ 0
+DEV_GND3
+Wire Wire Line
+	10700 6200 9500 6200
+Text Label 10700 6200 2    60   ~ 0
+DEV_GND4
+$EndSCHEMATC
