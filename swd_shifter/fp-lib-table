@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name NQBit)(type KiCad)(uri /home/ndq/dev/kicad/parts/NQBit.pretty)(options "")(descr ""))
+)

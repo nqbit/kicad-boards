@@ -1,0 +1,393 @@
+EESchema Schematic File Version 2
+LIBS:swd_shifter-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nqbit
+LIBS:swd_shifter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L JTAG_STLINKV2 J1
+U 1 1 53BC5CE4
+P 5950 4650
+F 0 "J1" H 6450 5250 60  0000 C CNN
+F 1 "JTAG_STLINKV2" H 6000 5250 60  0000 C CNN
+F 2 "NQBit:EDGE_CONNECTOR_2x10_2.54MM" H 4900 5100 60  0001 C CNN
+F 3 "" H 4900 5100 60  0000 C CNN
+	1    5950 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PACKET_TRACE_PORT J2
+U 1 1 53BC6131
+P 3300 3550
+F 0 "J2" H 3850 3900 60  0000 C CNN
+F 1 "PACKET_TRACE_PORT" H 3250 3900 60  0000 C CNN
+F 2 "NQBit:HEADER_PTH_MALE_2x5_1.27MM" H 3250 3900 60  0001 C CNN
+F 3 "" H 3250 3900 60  0000 C CNN
+	1    3300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCA9306 U1
+U 1 1 53BC65FD
+P 6050 3400
+F 0 "U1" H 6300 3700 60  0000 C CNN
+F 1 "PCA9306" H 5950 3700 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 5950 3700 60  0001 C CNN
+F 3 "" H 5950 3700 60  0000 C CNN
+	1    6050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 53BC67EC
+P 7150 2700
+F 0 "R1" V 7230 2700 40  0000 C CNN
+F 1 "200k" V 7157 2701 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7080 2700 30  0001 C CNN
+F 3 "" H 7150 2700 30  0000 C CNN
+	1    7150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 53BC68A7
+P 7050 5250
+F 0 "#PWR01" H 7050 5250 30  0001 C CNN
+F 1 "GND" H 7050 5180 30  0001 C CNN
+F 2 "" H 7050 5250 60  0000 C CNN
+F 3 "" H 7050 5250 60  0000 C CNN
+	1    7050 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 53BC6971
+P 5000 3300
+F 0 "#PWR02" H 5000 3300 30  0001 C CNN
+F 1 "GND" H 5000 3230 30  0001 C CNN
+F 2 "" H 5000 3300 60  0000 C CNN
+F 3 "" H 5000 3300 60  0000 C CNN
+	1    5000 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 3350
+NoConn ~ 3950 3450
+NoConn ~ 3950 3750
+NoConn ~ 2650 3750
+NoConn ~ 2650 3450
+NoConn ~ 4850 4300
+NoConn ~ 4850 4400
+NoConn ~ 4850 4700
+NoConn ~ 4850 4800
+NoConn ~ 4850 5000
+$Comp
+L C C1
+U 1 1 53BC6E97
+P 7550 3550
+F 0 "C1" H 7550 3650 40  0000 L CNN
+F 1 "0.1 uF" H 7556 3465 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7588 3400 30  0001 C CNN
+F 3 "" H 7550 3550 60  0000 C CNN
+	1    7550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 53BC709D
+P 4600 3200
+F 0 "R5" V 4680 3200 40  0000 C CNN
+F 1 "1k" V 4607 3201 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4530 3200 30  0001 C CNN
+F 3 "" H 4600 3200 30  0000 C CNN
+	1    4600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 53BC71AA
+P 4400 3150
+F 0 "R4" V 4480 3150 40  0000 C CNN
+F 1 "1k" V 4407 3151 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4330 3150 30  0001 C CNN
+F 3 "" H 4400 3150 30  0000 C CNN
+	1    4400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 53BC71FF
+P 7100 3150
+F 0 "R3" V 7180 3150 40  0000 C CNN
+F 1 "1k" V 7107 3151 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7030 3150 30  0001 C CNN
+F 3 "" H 7100 3150 30  0000 C CNN
+	1    7100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 53BC7240
+P 7300 3300
+F 0 "R2" V 7380 3300 40  0000 C CNN
+F 1 "1k" V 7307 3301 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 3300 30  0001 C CNN
+F 3 "" H 7300 3300 30  0000 C CNN
+	1    7300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 53BC750B
+P 7800 1550
+F 0 "#PWR03" H 7800 1510 30  0001 C CNN
+F 1 "+3.3V" H 7800 1660 30  0000 C CNN
+F 2 "" H 7800 1550 60  0000 C CNN
+F 3 "" H 7800 1550 60  0000 C CNN
+	1    7800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L JTAG_10_PIN J3
+U 1 1 53BC797B
+P 3350 1750
+F 0 "J3" H 3900 2100 60  0000 C CNN
+F 1 "JTAG_10_PIN" H 3300 2100 60  0000 C CNN
+F 2 "NQBit:HEADER_PTH_MALE_2x5_1.27MM" H 3300 2100 60  0001 C CNN
+F 3 "" H 3300 2100 60  0000 C CNN
+	1    3350 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4000 1750
+NoConn ~ 4000 1850
+NoConn ~ 2700 1850
+$Comp
+L GND #PWR04
+U 1 1 53BC7B2B
+P 2400 2050
+F 0 "#PWR04" H 2400 2050 30  0001 C CNN
+F 1 "GND" H 2400 1980 30  0001 C CNN
+F 2 "" H 2400 2050 60  0000 C CNN
+F 3 "" H 2400 2050 60  0000 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 53BC7E1B
+P 2200 3600
+F 0 "#PWR05" H 2200 3600 30  0001 C CNN
+F 1 "GND" H 2200 3530 30  0001 C CNN
+F 2 "" H 2200 3600 60  0000 C CNN
+F 3 "" H 2200 3600 60  0000 C CNN
+	1    2200 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 5100 0    60   Input ~ 0
+3V3
+Text GLabel 7600 1650 0    60   Input ~ 0
+3V3
+Text GLabel 7650 2550 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	4850 5100 4750 5100
+Wire Wire Line
+	6750 2700 6750 3350
+Wire Wire Line
+	6750 2700 7000 2700
+Connection ~ 6750 3250
+Wire Wire Line
+	7300 2700 7650 2700
+Wire Wire Line
+	7650 2950 7650 2550
+Connection ~ 7050 4400
+Connection ~ 7050 4300
+Connection ~ 7050 4500
+Connection ~ 7050 4600
+Connection ~ 7050 4700
+Connection ~ 7050 4800
+Connection ~ 7050 4900
+Connection ~ 7050 5000
+Connection ~ 7050 5100
+Wire Wire Line
+	5350 3250 5000 3250
+Wire Wire Line
+	5000 3250 5000 3300
+Wire Wire Line
+	7050 4300 7050 5250
+Wire Wire Line
+	5350 3350 4750 3350
+Wire Wire Line
+	4750 3100 4750 4200
+Wire Wire Line
+	4750 4200 4850 4200
+Wire Wire Line
+	6750 3550 7300 3550
+Wire Wire Line
+	7300 3450 7300 3950
+Wire Wire Line
+	7300 3950 4600 3950
+Wire Wire Line
+	4600 3950 4600 4500
+Wire Wire Line
+	4600 4500 4850 4500
+Wire Wire Line
+	4850 4600 4550 4600
+Wire Wire Line
+	4550 4600 4550 3900
+Wire Wire Line
+	4550 3900 7100 3900
+Wire Wire Line
+	7100 3900 7100 3300
+Wire Wire Line
+	7100 3450 6750 3450
+Wire Wire Line
+	4250 3550 5350 3550
+Wire Wire Line
+	4250 3550 4250 3900
+Wire Wire Line
+	4250 3900 2550 3900
+Wire Wire Line
+	2550 3900 2550 2600
+Wire Wire Line
+	2550 3650 2650 3650
+Wire Wire Line
+	4200 3450 5350 3450
+Wire Wire Line
+	3950 3550 4200 3550
+Wire Wire Line
+	4200 3550 4200 3450
+Wire Wire Line
+	4850 4900 4400 4900
+Wire Wire Line
+	4400 4900 4400 3650
+Wire Wire Line
+	4400 3650 3950 3650
+Wire Wire Line
+	2450 3100 4750 3100
+Connection ~ 4750 3350
+Wire Wire Line
+	7050 4200 7050 4000
+Wire Wire Line
+	7050 4000 4750 4000
+Connection ~ 4750 4000
+Wire Wire Line
+	6750 3350 7550 3350
+Wire Wire Line
+	7550 3700 7550 4300
+Wire Wire Line
+	7550 4300 7050 4300
+Wire Wire Line
+	4200 2950 4600 2950
+Wire Wire Line
+	4200 2950 4200 3100
+Connection ~ 4200 3100
+Connection ~ 4400 2950
+Wire Wire Line
+	7300 2950 7300 3150
+Wire Wire Line
+	7100 2950 7650 2950
+Connection ~ 7650 2700
+Connection ~ 7300 2950
+Wire Wire Line
+	2700 1650 2400 1650
+Wire Wire Line
+	2400 1650 2400 2050
+Wire Wire Line
+	2700 1750 2400 1750
+Connection ~ 2400 1750
+Wire Wire Line
+	2700 1950 2400 1950
+Connection ~ 2400 1950
+Wire Wire Line
+	2700 1550 2050 1550
+Wire Wire Line
+	2050 1550 2050 3350
+Wire Wire Line
+	4000 1950 4150 1950
+Wire Wire Line
+	4150 1950 4150 3650
+Connection ~ 4150 3650
+Wire Wire Line
+	4000 1650 4100 1650
+Wire Wire Line
+	4100 1650 4100 3550
+Connection ~ 4100 3550
+Wire Wire Line
+	4000 1550 4200 1550
+Wire Wire Line
+	4200 1550 4200 2600
+Wire Wire Line
+	4200 2600 2550 2600
+Connection ~ 2550 3650
+Wire Wire Line
+	2650 3550 2200 3550
+Wire Wire Line
+	2200 3550 2200 3600
+Wire Wire Line
+	7800 1550 7800 1650
+Wire Wire Line
+	7800 1650 7600 1650
+Wire Wire Line
+	2050 3350 2650 3350
+Wire Wire Line
+	2450 3100 2450 3350
+Connection ~ 2450 3350
+Connection ~ 4400 3550
+Connection ~ 4600 3450
+Wire Wire Line
+	4600 2950 4600 3050
+Wire Wire Line
+	4600 3350 4600 3450
+Wire Wire Line
+	7550 3350 7550 3400
+Connection ~ 7300 3550
+Connection ~ 7100 3450
+Wire Wire Line
+	7100 3000 7100 2950
+Wire Wire Line
+	4400 2950 4400 3000
+Wire Wire Line
+	4400 3300 4400 3550
+$EndSCHEMATC

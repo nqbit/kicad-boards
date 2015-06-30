@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Wed 09 Jul 2014 09:49:30 PM PDT
+
+BeginCmp
+TimeStamp = /53BC6E97;
+Reference = C1;
+ValeurCmp = 0.1 uF;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC5CE4;
+Reference = J1;
+ValeurCmp = JTAG_STLINKV2;
+IdModule  = My Parts:EDGE_CONNECTOR_2x10_2.54MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC6131;
+Reference = J2;
+ValeurCmp = PACKET_TRACE_PORT;
+IdModule  = My Parts:HEADER_PTH_MALE_2x5_1.27MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC797B;
+Reference = J3;
+ValeurCmp = JTAG_10_PIN;
+IdModule  = My Parts:HEADER_PTH_MALE_2x5_1.27MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC67EC;
+Reference = R1;
+ValeurCmp = 200k;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC7240;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC71FF;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC71AA;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC709D;
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BC65FD;
+Reference = U1;
+ValeurCmp = PCA9306;
+IdModule  = Housings_SSOP:MSOP-8;
+EndCmp
+
+EndListe
