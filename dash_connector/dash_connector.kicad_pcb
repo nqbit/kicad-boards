@@ -2,8 +2,8 @@
 
   (general
     (links 14)
-    (no_connects 14)
-    (area 0 0 0 0)
+    (no_connects 0)
+    (area 142.311667 77.695 152.475001 110.0315)
     (thickness 1.6)
     (drawings 6)
     (tracks 56)
@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x010fc_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory /home/qbit/dev/kicad-boards/dash_connector/))
   )
 
   (net 0 "")
