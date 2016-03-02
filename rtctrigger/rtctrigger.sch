@@ -1,0 +1,249 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nqbit
+LIBS:rtctrigger-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L M41T62 U1
+U 1 1 56D5D4E6
+P 5850 2650
+F 0 "U1" H 5850 1750 60  0000 C CNN
+F 1 "M41T62" H 5850 2650 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-16-1EP_3x3mm_Pitch0.5mm" H 5850 2850 60  0001 C CNN
+F 3 "" H 5850 2850 60  0000 C CNN
+	1    5850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56D5D51D
+P 6600 3100
+F 0 "#PWR01" H 6600 2850 50  0001 C CNN
+F 1 "GND" H 6600 2950 50  0000 C CNN
+F 2 "" H 6600 3100 50  0000 C CNN
+F 3 "" H 6600 3100 50  0000 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR02
+U 1 1 56D5D533
+P 6600 2800
+F 0 "#PWR02" H 6600 2650 50  0001 C CNN
+F 1 "+BATT" H 6600 2940 50  0000 C CNN
+F 2 "" H 6600 2800 50  0000 C CNN
+F 3 "" H 6600 2800 50  0000 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2800 7150 2800
+Wire Wire Line
+	6400 3000 6500 3000
+Wire Wire Line
+	6500 2900 6500 3100
+Wire Wire Line
+	6500 2900 6400 2900
+Connection ~ 6500 3000
+$Comp
+L Crystal_Small Y1
+U 1 1 56D5D5C9
+P 6600 3600
+F 0 "Y1" H 6600 3700 50  0000 C CNN
+F 1 "Crystal_Small" H 6600 3500 50  0000 C CNN
+F 2 "NQBit:FC-135" H 6600 3600 50  0001 C CNN
+F 3 "" H 6600 3600 50  0000 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3400 6450 3400
+Wire Wire Line
+	6450 3400 6450 3600
+Wire Wire Line
+	6450 3600 6500 3600
+Wire Wire Line
+	6700 3600 6750 3600
+Wire Wire Line
+	6750 3600 6750 3300
+Wire Wire Line
+	6750 3300 6400 3300
+$Comp
+L LED D1
+U 1 1 56D654E3
+P 4550 2900
+F 0 "D1" H 4550 3000 50  0000 C CNN
+F 1 "LED" H 4550 2800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 4550 2900 50  0001 C CNN
+F 3 "" H 4550 2900 50  0000 C CNN
+	1    4550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 56D6551D
+P 4350 2900
+F 0 "#PWR03" H 4350 2650 50  0001 C CNN
+F 1 "GND" H 4350 2750 50  0000 C CNN
+F 2 "" H 4350 2900 50  0000 C CNN
+F 3 "" H 4350 2900 50  0000 C CNN
+	1    4350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56D65547
+P 5000 2900
+F 0 "R1" V 5080 2900 50  0000 C CNN
+F 1 "300" V 5000 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4930 2900 50  0001 C CNN
+F 3 "" H 5000 2900 50  0000 C CNN
+	1    5000 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 2900 5300 2900
+Wire Wire Line
+	4750 2900 4850 2900
+$Comp
+L TEST_1P SDA1
+U 1 1 56D655C5
+P 4800 3300
+F 0 "SDA1" H 4800 3570 50  0000 C CNN
+F 1 "SDA" H 4800 3500 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5000 3300 50  0001 C CNN
+F 3 "" H 5000 3300 50  0000 C CNN
+	1    4800 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L TEST_1P SCL1
+U 1 1 56D65663
+P 5000 3300
+F 0 "SCL1" H 5000 3570 50  0000 C CNN
+F 1 "SCL" H 5000 3500 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5200 3300 50  0001 C CNN
+F 3 "" H 5200 3300 50  0000 C CNN
+	1    5000 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3100 4800 3100
+Wire Wire Line
+	4800 3100 4800 3300
+Wire Wire Line
+	5000 3300 5000 3200
+Wire Wire Line
+	5000 3200 5300 3200
+NoConn ~ 5300 2800
+Wire Wire Line
+	6400 3100 7600 3100
+Connection ~ 6500 3100
+$Comp
+L TEST_1P BATT1
+U 1 1 56D6829A
+P 6900 2800
+F 0 "BATT1" H 6900 3070 50  0000 C CNN
+F 1 "BATT" H 6900 3000 50  0000 C CNN
+F 2 "NQBit:PAD_7MM" H 7100 2800 50  0001 C CNN
+F 3 "" H 7100 2800 50  0000 C CNN
+	1    6900 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 2800
+$Comp
+L TEST_1P GND1
+U 1 1 56D684BE
+P 7300 3100
+F 0 "GND1" H 7300 3370 50  0000 C CNN
+F 1 "GND" H 7300 3300 50  0000 C CNN
+F 2 "NQBit:RECT_6X4MM" H 7500 3100 50  0001 C CNN
+F 3 "" H 7500 3100 50  0000 C CNN
+	1    7300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P GND2
+U 1 1 56D68502
+P 7600 3100
+F 0 "GND2" H 7600 3370 50  0000 C CNN
+F 1 "GND" H 7600 3300 50  0000 C CNN
+F 2 "NQBit:RECT_6X4MM" H 7800 3100 50  0001 C CNN
+F 3 "" H 7800 3100 50  0000 C CNN
+	1    7600 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 3100
+Connection ~ 7300 3100
+$Comp
+L TEST_1P OUT1
+U 1 1 56D688E4
+P 4700 2450
+F 0 "OUT1" H 4700 2720 50  0000 C CNN
+F 1 "OUT" H 4700 2650 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4900 2450 50  0001 C CNN
+F 3 "" H 4900 2450 50  0000 C CNN
+	1    4700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2450 4700 2700
+Wire Wire Line
+	4700 2700 5200 2700
+Wire Wire Line
+	5200 2700 5200 2900
+Connection ~ 5200 2900
+$Comp
+L TEST_1P BATT2
+U 1 1 56D68D54
+P 7150 2800
+F 0 "BATT2" H 7150 3070 50  0000 C CNN
+F 1 "BATT" H 7150 3000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 7350 2800 50  0001 C CNN
+F 3 "" H 7350 2800 50  0000 C CNN
+	1    7150 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 2800
+$EndSCHEMATC
