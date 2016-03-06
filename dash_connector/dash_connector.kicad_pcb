@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory /home/qbit/dev/kicad-boards/dash_connector/))
+      (outputdirectory Gerbers/))
   )
 
   (net 0 "")
