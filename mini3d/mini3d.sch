@@ -1,0 +1,286 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:nqbit
+LIBS:mini3d-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103C8 U?
+U 1 1 56E358D2
+P 5050 3450
+F 0 "U?" H 3750 5100 50  0000 C CNN
+F 1 "STM32F103C8" H 6100 1800 50  0000 C CNN
+F 2 "LQFP48" H 5050 3450 50  0000 C CNN
+F 3 "" H 5050 3450 50  0000 C CNN
+	1    5050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 56E373C0
+P 800 1300
+F 0 "P?" H 800 1550 50  0000 C CNN
+F 1 "PROGRAM" V 900 1300 50  0000 C CNN
+F 2 "" H 800 1300 50  0000 C CNN
+F 3 "" H 800 1300 50  0000 C CNN
+	1    800  1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E3743C
+P 1000 1450
+F 0 "#PWR?" H 1000 1200 50  0001 C CNN
+F 1 "GND" H 1000 1300 50  0000 C CNN
+F 2 "" H 1000 1450 50  0000 C CNN
+F 3 "" H 1000 1450 50  0000 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 56E37494
+P 1000 1350
+F 0 "#PWR?" H 1000 1200 50  0001 C CNN
+F 1 "VCC" V 1000 1550 50  0000 C CNN
+F 2 "" H 1000 1350 50  0000 C CNN
+F 3 "" H 1000 1350 50  0000 C CNN
+	1    1000 1350
+	0    1    1    0   
+$EndComp
+Text Label 1350 1250 2    60   ~ 0
+SWDIO
+Wire Wire Line
+	1000 1250 1350 1250
+Text Label 1350 1150 2    60   ~ 0
+SWCLK
+Wire Wire Line
+	1350 1150 1000 1150
+$Comp
+L VCC #PWR?
+U 1 1 56E375D7
+P 3550 2750
+F 0 "#PWR?" H 3550 2600 50  0001 C CNN
+F 1 "VCC" V 3550 2950 50  0000 C CNN
+F 2 "" H 3550 2750 50  0000 C CNN
+F 3 "" H 3550 2750 50  0000 C CNN
+	1    3550 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LM358 U?
+U 1 1 56E37604
+P 9250 1550
+F 0 "U?" H 9200 1750 50  0000 L CNN
+F 1 "LM358" H 9200 1300 50  0000 L CNN
+F 2 "" H 9250 1550 50  0000 C CNN
+F 3 "" H 9250 1550 50  0000 C CNN
+	1    9250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U?
+U 2 1 56E3767D
+P 9250 2250
+F 0 "U?" H 9200 2450 50  0000 L CNN
+F 1 "LM358" H 9200 2000 50  0000 L CNN
+F 2 "" H 9250 2250 50  0000 C CNN
+F 3 "" H 9250 2250 50  0000 C CNN
+	2    9250 2250
+	1    0    0    -1  
+$EndComp
+Text Label 7050 2650 2    60   ~ 0
+HALL_SCK
+Text Label 7050 2550 2    60   ~ 0
+HALL_nCS
+Wire Wire Line
+	6550 2550 7050 2550
+Wire Wire Line
+	6550 2650 7050 2650
+Text Label 7050 2750 2    60   ~ 0
+HALL_MISO
+Wire Wire Line
+	6550 2750 7050 2750
+$Comp
+L TLE5012B U?
+U 1 1 56E384B2
+P 8950 4100
+F 0 "U?" H 8950 3650 60  0000 C CNN
+F 1 "TLE5012B" H 8950 4550 60  0000 C CNN
+F 2 "" H 8550 4300 60  0000 C CNN
+F 3 "" H 8550 4300 60  0000 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E386EE
+P 8500 4400
+F 0 "#PWR?" H 8500 4150 50  0001 C CNN
+F 1 "GND" H 8500 4250 50  0000 C CNN
+F 2 "" H 8500 4400 50  0000 C CNN
+F 3 "" H 8500 4400 50  0000 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8500 4200
+Text Label 7950 3900 0    60   ~ 0
+HALL_nCS
+Text Label 7950 4000 0    60   ~ 0
+HALL_SCK
+Text Label 7950 3800 0    60   ~ 0
+HALL_MISO
+$Comp
+L GND #PWR?
+U 1 1 56E3878B
+P 9400 3900
+F 0 "#PWR?" H 9400 3650 50  0001 C CNN
+F 1 "GND" H 9400 3750 50  0000 C CNN
+F 2 "" H 9400 3900 50  0000 C CNN
+F 3 "" H 9400 3900 50  0000 C CNN
+	1    9400 3900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8500 4300
+Wire Wire Line
+	8500 3800 7950 3800
+Wire Wire Line
+	7950 3900 8500 3900
+Wire Wire Line
+	8500 4000 7950 4000
+$Comp
+L VCC #PWR?
+U 1 1 56E388F9
+P 9400 3800
+F 0 "#PWR?" H 9400 3650 50  0001 C CNN
+F 1 "VCC" V 9400 4000 50  0000 C CNN
+F 2 "" H 9400 3800 50  0000 C CNN
+F 3 "" H 9400 3800 50  0000 C CNN
+	1    9400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X06 P?
+U 1 1 56E38A6B
+P 750 2400
+F 0 "P?" H 750 2750 50  0000 C CNN
+F 1 "CONN_01X06" V 850 2400 50  0000 C CNN
+F 2 "" H 750 2400 50  0000 C CNN
+F 3 "" H 750 2400 50  0000 C CNN
+	1    750  2400
+	-1   0    0    1   
+$EndComp
+Text Label 2850 4650 0    60   ~ 0
+MOTOR_LOW_A
+Text Label 2850 4750 0    60   ~ 0
+MOTOR_LOW_B
+Text Label 2850 4850 0    60   ~ 0
+MOTOR_LOW_C
+Wire Wire Line
+	3550 4650 2850 4650
+Wire Wire Line
+	3550 4750 2850 4750
+Wire Wire Line
+	3550 4850 2850 4850
+Text Label 7250 2950 2    60   ~ 0
+MOTOR_LOW_A
+Text Label 7250 3050 2    60   ~ 0
+MOTOR_LOW_B
+Text Label 7250 3150 2    60   ~ 0
+MOTOR_LOW_C
+Wire Wire Line
+	6550 2950 7250 2950
+Wire Wire Line
+	6550 3050 7250 3050
+Wire Wire Line
+	6550 3150 7250 3150
+Text Label 7500 2250 2    60   ~ 0
+MOTOR_CURRENT_B
+Text Label 7500 2150 2    60   ~ 0
+MOTOR_CURRENT_A
+Wire Wire Line
+	6550 2150 7500 2150
+Wire Wire Line
+	6550 2250 7500 2250
+$Comp
+L R R?
+U 1 1 56E3911B
+P 9800 1550
+F 0 "R?" V 9880 1550 50  0000 C CNN
+F 1 "01A" V 9800 1550 50  0000 C CNN
+F 2 "" V 9730 1550 50  0000 C CNN
+F 3 "" H 9800 1550 50  0000 C CNN
+	1    9800 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 56E3919F
+P 9300 900
+F 0 "R?" V 9380 900 50  0000 C CNN
+F 1 "01C" V 9300 900 50  0000 C CNN
+F 2 "" V 9230 900 50  0000 C CNN
+F 3 "" H 9300 900 50  0000 C CNN
+	1    9300 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 1550 9600 900 
+Wire Wire Line
+	9600 900  9450 900 
+Wire Wire Line
+	9550 1550 9650 1550
+Connection ~ 9600 1550
+$Comp
+L R R?
+U 1 1 56E392DF
+P 8700 1450
+F 0 "R?" V 8780 1450 50  0000 C CNN
+F 1 "01C" V 8700 1450 50  0000 C CNN
+F 2 "" V 8630 1450 50  0000 C CNN
+F 3 "" H 8700 1450 50  0000 C CNN
+	1    8700 1450
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
