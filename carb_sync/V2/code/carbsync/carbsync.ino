@@ -1,7 +1,14 @@
-#include <SPI.h>
+#include <EEPROM.h>
 #include <ILI9341_t3.h>
+#include <SPI.h>
 #include <TouchScreen.h>
 
+#define MEM_MAGIC_ADDRESS 0
+#define MEM_MAGIC_VALUE 0xDEADBEEF
+#define SMOOTH_FACTOR_DEFAULT 0.99
+#define SMOOTH_FACTOR_ADDRESS 4
+#define SCALE_FACTOR_DEFAULT 0.3
+#define SCALE_FACTOR_ADDRESS 8
 
 #define DISP_X_OFFSET 0
 #define DISP_Y_OFFSET 5
@@ -43,7 +50,9 @@
 #define TFT_RST 8
 
 float SMOOTH_FACTOR = 0.99;
+float LAST_SMOOTH_FACTOR = 0.99;
 float SCALE_FACTOR = 0.3;
+float LAST_SCALE_FACTOR = 0.3;
 
 ILI9341_t3 tft = ILI9341_t3(TFT_CS, TFT_DC, TFT_RST, TFT_MOSI, TFT_SCLK, TFT_MISO);
 TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
@@ -97,9 +106,74 @@ class Button {
 
 Button* buttons[4];
 
+uint32_t getuint32(uint16_t addr)
+{
+  uint32_t val = 0;
+  uint8_t val1 =  EEPROM.read(addr + 0) & 0xFF;
+  uint8_t val2 =  EEPROM.read(addr + 1) & 0xFF;
+  uint8_t val3 =  EEPROM.read(addr + 2) & 0xFF;
+  uint8_t val4 =  EEPROM.read(addr + 3) & 0xFF;
+
+  val = val1 | (val2 << 8) | (val3 << 16) | (val4 << 24);
+  Serial.printf("getuint32: 0x%02x 0x%x 0x%x 0x%x 0x%02x\r\n", val1, val2, val3, val4, val);
+  return val;
+}
+
+void setuint32(uint16_t addr, uint32_t val)
+{
+  uint8_t val1 = (val >> 0) & 0xFF;
+  uint8_t val2 = (val >> 8) & 0xFF;
+  uint8_t val3 = (val >> 16) & 0xFF;
+  uint8_t val4 = (val >> 24) & 0xFF;
+
+  EEPROM.write(addr + 0, val1);
+  EEPROM.write(addr + 1, val2);
+  EEPROM.write(addr + 2, val3);
+  EEPROM.write(addr + 3, val4);
+
+  Serial.printf("setuint32: 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x\r\n", val1, val2, val3, val4, val);
+}
+
+void writeValues()
+{
+  setuint32(SMOOTH_FACTOR_ADDRESS, *((uint32_t*) &SMOOTH_FACTOR));
+  setuint32(SCALE_FACTOR_ADDRESS, *((uint32_t*) &SCALE_FACTOR));
+}
+
+void writeMagic()
+{
+  setuint32(MEM_MAGIC_ADDRESS, (uint32_t) MEM_MAGIC_VALUE);
+}
 
 
+void readValues()
+{
+  uint32_t val1 = getuint32(SMOOTH_FACTOR_ADDRESS);
+  uint32_t val2 = getuint32(SCALE_FACTOR_ADDRESS);
+  SMOOTH_FACTOR = max(0.0, min(1.0, (float) * ((float*) &val1)));
+  SCALE_FACTOR = max(0.0, min(1.0, (float) * ((float*) &val2)));
+  LAST_SMOOTH_FACTOR = SMOOTH_FACTOR;
+  LAST_SCALE_FACTOR = SCALE_FACTOR;
+}
+
+void restoreValues()
+{
+  uint32_t magic = getuint32(MEM_MAGIC_ADDRESS);
+
+  if (magic != MEM_MAGIC_VALUE) {
+    SMOOTH_FACTOR = SMOOTH_FACTOR_DEFAULT;
+    SCALE_FACTOR = SCALE_FACTOR_DEFAULT;
+    writeValues();
+    writeMagic();
+    Serial.println("Found NO magic");
+  } else {
+    readValues();
+    Serial.println("Found magic");
+  }
+}
 void setup(void) {
+
+
   tft.begin();
   tft.fillScreen(ILI9341_BLACK);
 
@@ -118,6 +192,8 @@ void setup(void) {
   buttons[1] = new Button(110, 50, 90, 70);
   buttons[2] = new Button(10, 150, 90, 70);
   buttons[3] = new Button(110, 150, 90, 70);
+
+  restoreValues();
 }
 
 
@@ -197,6 +273,8 @@ void loop()
     return;
   }
 
+  Serial.println(mode);
+
   // Handle Touch
   switch (mode) {
     case Display:
@@ -206,6 +284,12 @@ void loop()
       break;
     case Config:
       mode = Display;
+      if (LAST_SMOOTH_FACTOR != SMOOTH_FACTOR ||
+          LAST_SCALE_FACTOR != SCALE_FACTOR) {
+        writeValues();
+      }
+      LAST_SCALE_FACTOR = SCALE_FACTOR;
+      LAST_SMOOTH_FACTOR = SMOOTH_FACTOR;
       tft.setRotation(2);
       tft.fillScreen(ILI9341_BLACK);
       break;
