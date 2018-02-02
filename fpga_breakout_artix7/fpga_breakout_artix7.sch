@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:fpga_breakout_artix7-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:nqbit
-LIBS:fpga_breakout_artix7-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -183,22 +181,22 @@ Wire Wire Line
 $Comp
 L CONN_02X05 P1
 U 1 1 5A56630D
-P 3700 3300
-F 0 "P1" H 3700 3600 50  0000 C CNN
-F 1 "CONN_02X05" H 3700 3000 50  0000 C CNN
-F 2 "" H 3700 2100 50  0001 C CNN
-F 3 "" H 3700 2100 50  0000 C CNN
-	1    3700 3300
+P 3800 3000
+F 0 "P1" H 3800 3300 50  0000 C CNN
+F 1 "CONN_02X05" H 3800 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm_SMD" H 3800 1800 50  0001 C CNN
+F 3 "" H 3800 1800 50  0000 C CNN
+	1    3800 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 3100 4500 3100
+	4050 2800 4600 2800
 Wire Wire Line
-	3950 3200 4500 3200
-Text Label 4500 3100 2    60   ~ 0
+	4050 2900 4600 2900
+Text Label 4600 2800 2    60   ~ 0
 JTAG_TMS
-Text Label 4500 3200 2    60   ~ 0
-JTAG_TDO
+Text Label 4600 2900 2    60   ~ 0
+JTAG_TCK
 Text Label 2950 3250 2    60   ~ 0
 JTAG_TMS
 Text Label 2950 3350 2    60   ~ 0
@@ -221,7 +219,7 @@ U 1 1 5A566EAD
 P 3150 1450
 F 0 "R1" V 3230 1450 50  0000 C CNN
 F 1 "100" V 3150 1450 50  0000 C CNN
-F 2 "" V 3080 1450 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 3080 1450 50  0001 C CNN
 F 3 "" H 3150 1450 50  0000 C CNN
 	1    3150 1450
 	0    1    1    0   
@@ -514,4 +512,42 @@ U 5A6CE5DD
 F0 "power" 60
 F1 "power.sch" 60
 $EndSheet
+Text Label 4600 3000 2    60   ~ 0
+JTAG_TDO
+Text Label 4600 3100 2    60   ~ 0
+JTAG_TDI
+Wire Wire Line
+	4050 3000 4600 3000
+Wire Wire Line
+	4600 3100 4050 3100
+$Comp
+L GND #PWR011
+U 1 1 5A70B3CD
+P 3500 3250
+F 0 "#PWR011" H 3500 3000 50  0001 C CNN
+F 1 "GND" H 3500 3100 50  0000 C CNN
+F 2 "" H 3500 3250 50  0001 C CNN
+F 3 "" H 3500 3250 50  0001 C CNN
+	1    3500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3200 3500 3200
+Wire Wire Line
+	3500 2900 3500 3250
+Wire Wire Line
+	4050 3200 4600 3200
+Text Label 4600 3200 2    60   ~ 0
+RESET
+Wire Wire Line
+	3550 2800 3150 2800
+Text Label 3150 2800 0    60   ~ 0
+VCC3V3
+Wire Wire Line
+	3550 2900 3500 2900
+Connection ~ 3500 3200
+Wire Wire Line
+	3550 3000 3500 3000
+Connection ~ 3500 3000
+NoConn ~ 3550 3100
 $EndSCHEMATC
