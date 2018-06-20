@@ -1,0 +1,1120 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nqbit
+LIBS:ledmonger-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED_ARGB D0
+U 1 1 5B0D9A4E
+P 1900 1150
+F 0 "D0" H 1900 1520 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 800 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 1100 50  0001 C CNN
+F 3 "" H 1900 1100 50  0001 C CNN
+	1    1900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D1
+U 1 1 5B0D9F06
+P 1900 2000
+F 0 "D1" H 1900 2370 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 1650 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 1950 50  0001 C CNN
+F 3 "" H 1900 1950 50  0001 C CNN
+	1    1900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D2
+U 1 1 5B0DA172
+P 1900 2850
+F 0 "D2" H 1900 3220 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 2500 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 2800 50  0001 C CNN
+F 3 "" H 1900 2800 50  0001 C CNN
+	1    1900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D3
+U 1 1 5B0DA178
+P 1900 3700
+F 0 "D3" H 1900 4070 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 3350 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 3650 50  0001 C CNN
+F 3 "" H 1900 3650 50  0001 C CNN
+	1    1900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D4
+U 1 1 5B0DAF3E
+P 1900 4550
+F 0 "D4" H 1900 4920 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 4200 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 4500 50  0001 C CNN
+F 3 "" H 1900 4500 50  0001 C CNN
+	1    1900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D5
+U 1 1 5B0DAF44
+P 1900 5400
+F 0 "D5" H 1900 5770 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 5050 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 5350 50  0001 C CNN
+F 3 "" H 1900 5350 50  0001 C CNN
+	1    1900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D6
+U 1 1 5B0DAF4A
+P 1900 6250
+F 0 "D6" H 1900 6620 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 5900 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 6200 50  0001 C CNN
+F 3 "" H 1900 6200 50  0001 C CNN
+	1    1900 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D7
+U 1 1 5B0DAF50
+P 1900 7100
+F 0 "D7" H 1900 7470 50  0000 C CNN
+F 1 "LED_ARGB" H 1900 6750 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 1900 7050 50  0001 C CNN
+F 3 "" H 1900 7050 50  0001 C CNN
+	1    1900 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D8
+U 1 1 5B0DB6BE
+P 3700 1150
+F 0 "D8" H 3700 1520 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 800 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 1100 50  0001 C CNN
+F 3 "" H 3700 1100 50  0001 C CNN
+	1    3700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D9
+U 1 1 5B0DB6C4
+P 3700 2000
+F 0 "D9" H 3700 2370 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 1650 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 1950 50  0001 C CNN
+F 3 "" H 3700 1950 50  0001 C CNN
+	1    3700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D10
+U 1 1 5B0DB6CA
+P 3700 2850
+F 0 "D10" H 3700 3220 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 2500 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 2800 50  0001 C CNN
+F 3 "" H 3700 2800 50  0001 C CNN
+	1    3700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D11
+U 1 1 5B0DB6D0
+P 3700 3700
+F 0 "D11" H 3700 4070 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 3350 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 3650 50  0001 C CNN
+F 3 "" H 3700 3650 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D12
+U 1 1 5B0DB6D6
+P 3700 4550
+F 0 "D12" H 3700 4920 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 4200 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 4500 50  0001 C CNN
+F 3 "" H 3700 4500 50  0001 C CNN
+	1    3700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D13
+U 1 1 5B0DB6DC
+P 3700 5400
+F 0 "D13" H 3700 5770 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 5050 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 5350 50  0001 C CNN
+F 3 "" H 3700 5350 50  0001 C CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D14
+U 1 1 5B0DB6E2
+P 3700 6250
+F 0 "D14" H 3700 6620 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 5900 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 6200 50  0001 C CNN
+F 3 "" H 3700 6200 50  0001 C CNN
+	1    3700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ARGB D15
+U 1 1 5B0DB6E8
+P 3700 7100
+F 0 "D15" H 3700 7470 50  0000 C CNN
+F 1 "LED_ARGB" H 3700 6750 50  0000 C CNN
+F 2 "NQBit:LED_HSMF-C114" H 3700 7050 50  0001 C CNN
+F 3 "" H 3700 7050 50  0001 C CNN
+	1    3700 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 950  1350 950 
+Text Label 1350 950  0    60   ~ 0
+LEDR0
+Wire Wire Line
+	1700 1150 1350 1150
+Text Label 1350 1150 0    60   ~ 0
+LEDG0
+Wire Wire Line
+	1700 1350 1350 1350
+Text Label 1350 1350 0    60   ~ 0
+LEDB0
+Wire Wire Line
+	1700 1800 1350 1800
+Text Label 1350 1800 0    60   ~ 0
+LEDR1
+Wire Wire Line
+	1700 2000 1350 2000
+Text Label 1350 2000 0    60   ~ 0
+LEDG1
+Wire Wire Line
+	1700 2200 1350 2200
+Text Label 1350 2200 0    60   ~ 0
+LEDB1
+Wire Wire Line
+	1700 2650 1350 2650
+Text Label 1350 2650 0    60   ~ 0
+LEDR2
+Wire Wire Line
+	1700 2850 1350 2850
+Text Label 1350 2850 0    60   ~ 0
+LEDG2
+Wire Wire Line
+	1700 3050 1350 3050
+Text Label 1350 3050 0    60   ~ 0
+LEDB2
+Wire Wire Line
+	1700 3500 1350 3500
+Text Label 1350 3500 0    60   ~ 0
+LEDR3
+Wire Wire Line
+	1700 3700 1350 3700
+Text Label 1350 3700 0    60   ~ 0
+LEDG3
+Wire Wire Line
+	1700 3900 1350 3900
+Text Label 1350 3900 0    60   ~ 0
+LEDB3
+Wire Wire Line
+	1700 4350 1350 4350
+Text Label 1350 4350 0    60   ~ 0
+LEDR4
+Wire Wire Line
+	1700 4550 1350 4550
+Text Label 1350 4550 0    60   ~ 0
+LEDG4
+Wire Wire Line
+	1700 4750 1350 4750
+Text Label 1350 4750 0    60   ~ 0
+LEDB4
+Wire Wire Line
+	1700 5200 1350 5200
+Text Label 1350 5200 0    60   ~ 0
+LEDR5
+Wire Wire Line
+	1700 5400 1350 5400
+Text Label 1350 5400 0    60   ~ 0
+LEDG5
+Wire Wire Line
+	1700 5600 1350 5600
+Text Label 1350 5600 0    60   ~ 0
+LEDB5
+Wire Wire Line
+	1700 6050 1350 6050
+Text Label 1350 6050 0    60   ~ 0
+LEDR6
+Wire Wire Line
+	1700 6250 1350 6250
+Text Label 1350 6250 0    60   ~ 0
+LEDG6
+Wire Wire Line
+	1700 6450 1350 6450
+Text Label 1350 6450 0    60   ~ 0
+LEDB6
+Wire Wire Line
+	1700 6900 1350 6900
+Text Label 1350 6900 0    60   ~ 0
+LEDR7
+Wire Wire Line
+	1700 7100 1350 7100
+Text Label 1350 7100 0    60   ~ 0
+LEDG7
+Wire Wire Line
+	1700 7300 1350 7300
+Text Label 1350 7300 0    60   ~ 0
+LEDB7
+Wire Wire Line
+	3500 950  3150 950 
+Text Label 3150 950  0    60   ~ 0
+LEDR8
+Wire Wire Line
+	3500 1150 3150 1150
+Text Label 3150 1150 0    60   ~ 0
+LEDG8
+Wire Wire Line
+	3500 1350 3150 1350
+Text Label 3150 1350 0    60   ~ 0
+LEDB8
+Wire Wire Line
+	3500 1800 3150 1800
+Text Label 3150 1800 0    60   ~ 0
+LEDR9
+Wire Wire Line
+	3500 2000 3150 2000
+Text Label 3150 2000 0    60   ~ 0
+LEDG9
+Wire Wire Line
+	3500 2200 3150 2200
+Text Label 3150 2200 0    60   ~ 0
+LEDB9
+Wire Wire Line
+	3500 2650 3150 2650
+Text Label 3150 2650 0    60   ~ 0
+LEDR10
+Wire Wire Line
+	3500 2850 3150 2850
+Text Label 3150 2850 0    60   ~ 0
+LEDG10
+Wire Wire Line
+	3500 3050 3150 3050
+Text Label 3150 3050 0    60   ~ 0
+LEDB10
+Wire Wire Line
+	3500 3500 3150 3500
+Text Label 3150 3500 0    60   ~ 0
+LEDR11
+Wire Wire Line
+	3500 3700 3150 3700
+Text Label 3150 3700 0    60   ~ 0
+LEDG11
+Wire Wire Line
+	3500 3900 3150 3900
+Text Label 3150 3900 0    60   ~ 0
+LEDB11
+Wire Wire Line
+	3500 4350 3150 4350
+Text Label 3150 4350 0    60   ~ 0
+LEDR12
+Wire Wire Line
+	3500 4550 3150 4550
+Text Label 3150 4550 0    60   ~ 0
+LEDG12
+Wire Wire Line
+	3500 4750 3150 4750
+Text Label 3150 4750 0    60   ~ 0
+LEDB12
+Wire Wire Line
+	3500 5200 3150 5200
+Text Label 3150 5200 0    60   ~ 0
+LEDR13
+Wire Wire Line
+	3500 5400 3150 5400
+Text Label 3150 5400 0    60   ~ 0
+LEDG13
+Wire Wire Line
+	3500 5600 3150 5600
+Text Label 3150 5600 0    60   ~ 0
+LEDB13
+Wire Wire Line
+	3500 6050 3150 6050
+Text Label 3150 6050 0    60   ~ 0
+LEDR14
+Wire Wire Line
+	3500 6250 3150 6250
+Text Label 3150 6250 0    60   ~ 0
+LEDG14
+Wire Wire Line
+	3500 6450 3150 6450
+Text Label 3150 6450 0    60   ~ 0
+LEDB14
+Wire Wire Line
+	3500 6900 3150 6900
+Text Label 3150 6900 0    60   ~ 0
+LEDR15
+Wire Wire Line
+	3500 7100 3150 7100
+Text Label 3150 7100 0    60   ~ 0
+LEDG15
+Wire Wire Line
+	3500 7300 3150 7300
+Text Label 3150 7300 0    60   ~ 0
+LEDB15
+$Comp
+L TLC5955 U1
+U 1 1 5B0DCB7E
+P 8300 3900
+F 0 "U1" H 8300 650 60  0000 C CNN
+F 1 "TLC5955" H 8300 7150 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-56-1EP_7x7mm_Pitch0.4mm" H 9200 7000 60  0001 C CNN
+F 3 "" H 9200 7000 60  0001 C CNN
+	1    8300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 800  9550 800 
+Text Label 9550 800  2    60   ~ 0
+LEDR0
+Wire Wire Line
+	9200 900  9550 900 
+Text Label 9550 900  2    60   ~ 0
+LEDG0
+Wire Wire Line
+	9200 1000 9550 1000
+Text Label 9550 1000 2    60   ~ 0
+LEDB0
+Wire Wire Line
+	9200 1200 9550 1200
+Text Label 9550 1200 2    60   ~ 0
+LEDR1
+Wire Wire Line
+	9200 1300 9550 1300
+Text Label 9550 1300 2    60   ~ 0
+LEDG1
+Wire Wire Line
+	9200 1400 9550 1400
+Text Label 9550 1400 2    60   ~ 0
+LEDB1
+Wire Wire Line
+	9200 1600 9550 1600
+Text Label 9550 1600 2    60   ~ 0
+LEDR2
+Wire Wire Line
+	9200 1700 9550 1700
+Text Label 9550 1700 2    60   ~ 0
+LEDG2
+Wire Wire Line
+	9200 1800 9550 1800
+Text Label 9550 1800 2    60   ~ 0
+LEDB2
+Wire Wire Line
+	9200 2000 9550 2000
+Text Label 9550 2000 2    60   ~ 0
+LEDR3
+Wire Wire Line
+	9200 2100 9550 2100
+Text Label 9550 2100 2    60   ~ 0
+LEDG3
+Wire Wire Line
+	9200 2200 9550 2200
+Text Label 9550 2200 2    60   ~ 0
+LEDB3
+Wire Wire Line
+	9200 2400 9550 2400
+Text Label 9550 2400 2    60   ~ 0
+LEDR4
+Wire Wire Line
+	9200 2500 9550 2500
+Text Label 9550 2500 2    60   ~ 0
+LEDG4
+Wire Wire Line
+	9200 2600 9550 2600
+Text Label 9550 2600 2    60   ~ 0
+LEDB4
+Wire Wire Line
+	9200 2800 9550 2800
+Text Label 9550 2800 2    60   ~ 0
+LEDR5
+Wire Wire Line
+	9200 2900 9550 2900
+Text Label 9550 2900 2    60   ~ 0
+LEDG5
+Wire Wire Line
+	9200 3000 9550 3000
+Text Label 9550 3000 2    60   ~ 0
+LEDB5
+Wire Wire Line
+	9200 3200 9550 3200
+Text Label 9550 3200 2    60   ~ 0
+LEDR6
+Wire Wire Line
+	9200 3300 9550 3300
+Text Label 9550 3300 2    60   ~ 0
+LEDG6
+Wire Wire Line
+	9200 3400 9550 3400
+Text Label 9550 3400 2    60   ~ 0
+LEDB6
+Wire Wire Line
+	9200 3600 9550 3600
+Text Label 9550 3600 2    60   ~ 0
+LEDR7
+Wire Wire Line
+	9200 3700 9550 3700
+Text Label 9550 3700 2    60   ~ 0
+LEDG7
+Wire Wire Line
+	9200 3800 9550 3800
+Text Label 9550 3800 2    60   ~ 0
+LEDB7
+Wire Wire Line
+	9200 4000 9550 4000
+Text Label 9550 4000 2    60   ~ 0
+LEDR8
+Wire Wire Line
+	9200 4100 9550 4100
+Text Label 9550 4100 2    60   ~ 0
+LEDG8
+Wire Wire Line
+	9200 4200 9550 4200
+Text Label 9550 4200 2    60   ~ 0
+LEDB8
+Wire Wire Line
+	9200 4400 9550 4400
+Text Label 9550 4400 2    60   ~ 0
+LEDR9
+Wire Wire Line
+	9200 4500 9550 4500
+Text Label 9550 4500 2    60   ~ 0
+LEDG9
+Wire Wire Line
+	9200 4600 9550 4600
+Text Label 9550 4600 2    60   ~ 0
+LEDB9
+Wire Wire Line
+	9200 4800 9550 4800
+Text Label 9550 4800 2    60   ~ 0
+LEDR10
+Wire Wire Line
+	9200 4900 9550 4900
+Text Label 9550 4900 2    60   ~ 0
+LEDG10
+Wire Wire Line
+	9200 5000 9550 5000
+Text Label 9550 5000 2    60   ~ 0
+LEDB10
+Wire Wire Line
+	9200 5200 9550 5200
+Text Label 9550 5200 2    60   ~ 0
+LEDR11
+Wire Wire Line
+	9200 5300 9550 5300
+Text Label 9550 5300 2    60   ~ 0
+LEDG11
+Wire Wire Line
+	9200 5400 9550 5400
+Text Label 9550 5400 2    60   ~ 0
+LEDB11
+Wire Wire Line
+	9200 5600 9550 5600
+Text Label 9550 5600 2    60   ~ 0
+LEDR12
+Wire Wire Line
+	9200 5700 9550 5700
+Text Label 9550 5700 2    60   ~ 0
+LEDG12
+Wire Wire Line
+	9200 5800 9550 5800
+Text Label 9550 5800 2    60   ~ 0
+LEDB12
+Wire Wire Line
+	9200 6000 9550 6000
+Text Label 9550 6000 2    60   ~ 0
+LEDR13
+Wire Wire Line
+	9200 6100 9550 6100
+Text Label 9550 6100 2    60   ~ 0
+LEDG13
+Wire Wire Line
+	9200 6200 9550 6200
+Text Label 9550 6200 2    60   ~ 0
+LEDB13
+Wire Wire Line
+	9200 6400 9550 6400
+Text Label 9550 6400 2    60   ~ 0
+LEDR14
+Wire Wire Line
+	9200 6500 9550 6500
+Text Label 9550 6500 2    60   ~ 0
+LEDG14
+Wire Wire Line
+	9200 6600 9550 6600
+Text Label 9550 6600 2    60   ~ 0
+LEDB14
+Wire Wire Line
+	9200 6800 9550 6800
+Text Label 9550 6800 2    60   ~ 0
+LEDR15
+Wire Wire Line
+	9200 6900 9550 6900
+Text Label 9550 6900 2    60   ~ 0
+LEDG15
+Wire Wire Line
+	9200 7000 9550 7000
+Text Label 9550 7000 2    60   ~ 0
+LEDB15
+$Comp
+L +3.3V #PWR01
+U 1 1 5B0DE31B
+P 2150 750
+F 0 "#PWR01" H 2150 600 50  0001 C CNN
+F 1 "+3.3V" H 2150 890 50  0000 C CNN
+F 2 "" H 2150 750 50  0001 C CNN
+F 3 "" H 2150 750 50  0001 C CNN
+	1    2150 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5B0DE3D7
+P 3950 750
+F 0 "#PWR02" H 3950 600 50  0001 C CNN
+F 1 "+3.3V" H 3950 890 50  0000 C CNN
+F 2 "" H 3950 750 50  0001 C CNN
+F 3 "" H 3950 750 50  0001 C CNN
+	1    3950 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 750  3950 7100
+Wire Wire Line
+	3950 1150 3900 1150
+Wire Wire Line
+	3950 2000 3900 2000
+Connection ~ 3950 1150
+Wire Wire Line
+	3950 2850 3900 2850
+Connection ~ 3950 2000
+Wire Wire Line
+	3950 3700 3900 3700
+Connection ~ 3950 2850
+Wire Wire Line
+	3950 4550 3900 4550
+Connection ~ 3950 3700
+Wire Wire Line
+	3950 5400 3900 5400
+Connection ~ 3950 4550
+Wire Wire Line
+	3950 6250 3900 6250
+Connection ~ 3950 5400
+Wire Wire Line
+	3950 7100 3900 7100
+Connection ~ 3950 6250
+Wire Wire Line
+	2150 750  2150 7100
+Wire Wire Line
+	2150 7100 2100 7100
+Wire Wire Line
+	2100 6250 2150 6250
+Connection ~ 2150 6250
+Wire Wire Line
+	2100 4550 2150 4550
+Connection ~ 2150 4550
+Wire Wire Line
+	2100 5400 2150 5400
+Connection ~ 2150 5400
+Wire Wire Line
+	2100 3700 2150 3700
+Connection ~ 2150 3700
+Wire Wire Line
+	2100 2850 2150 2850
+Connection ~ 2150 2850
+Wire Wire Line
+	2100 2000 2150 2000
+Connection ~ 2150 2000
+Wire Wire Line
+	2100 1150 2150 1150
+Connection ~ 2150 1150
+$Comp
+L +3.3V #PWR03
+U 1 1 5B0DEEE7
+P 7350 3350
+F 0 "#PWR03" H 7350 3200 50  0001 C CNN
+F 1 "+3.3V" H 7350 3490 50  0000 C CNN
+F 2 "" H 7350 3350 50  0001 C CNN
+F 3 "" H 7350 3350 50  0001 C CNN
+	1    7350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3400 7350 3400
+Wire Wire Line
+	7350 3400 7350 3350
+$Comp
+L GND #PWR04
+U 1 1 5B0DF020
+P 7350 4550
+F 0 "#PWR04" H 7350 4300 50  0001 C CNN
+F 1 "GND" H 7350 4400 50  0000 C CNN
+F 2 "" H 7350 4550 50  0001 C CNN
+F 3 "" H 7350 4550 50  0001 C CNN
+	1    7350 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4300 7350 4300
+Wire Wire Line
+	7350 4300 7350 4550
+Wire Wire Line
+	7400 4400 7350 4400
+Connection ~ 7350 4400
+Wire Wire Line
+	7350 4500 7400 4500
+Connection ~ 7350 4500
+Wire Wire Line
+	5750 2150 6400 2150
+Text Label 6400 2150 2    60   ~ 0
+V36P0
+Wire Wire Line
+	5750 2250 6400 2250
+Text Label 6400 2450 2    60   ~ 0
+SIN
+Text Label 6400 2350 2    60   ~ 0
+SCLK
+Text Label 6400 2250 2    60   ~ 0
+LAT
+Text Label 6400 2550 2    60   ~ 0
+GSCLK
+Text Label 6400 2750 2    60   ~ 0
+GND
+Wire Wire Line
+	5750 2750 6400 2750
+Wire Wire Line
+	6400 2650 5750 2650
+Wire Wire Line
+	5750 2550 6400 2550
+Wire Wire Line
+	6400 2450 5750 2450
+Wire Wire Line
+	5750 2350 6400 2350
+Text Label 6400 2650 2    60   ~ 0
+SOUT_LAST
+$Comp
+L Conn_01x07 J1
+U 1 1 5B0DFECB
+P 5550 2450
+F 0 "J1" H 5550 2850 50  0000 C CNN
+F 1 "Conn_01x07" H 5550 2050 50  0000 C CNN
+F 2 "NQBit:CONN_SMD_EDGE_x7_1.27mm_REV" H 5550 2450 50  0001 C CNN
+F 3 "" H 5550 2450 50  0001 C CNN
+	1    5550 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3100 6400 3100
+Text Label 6400 3100 2    60   ~ 0
+V36P0
+Wire Wire Line
+	5750 3200 6400 3200
+Text Label 6400 3400 2    60   ~ 0
+SOUT
+Text Label 6400 3300 2    60   ~ 0
+SCLK
+Text Label 6400 3200 2    60   ~ 0
+LAT
+Text Label 6400 3500 2    60   ~ 0
+GSCLK
+Text Label 6400 3700 2    60   ~ 0
+GND
+Wire Wire Line
+	5750 3700 6400 3700
+Wire Wire Line
+	6400 3600 5750 3600
+Wire Wire Line
+	5750 3500 6400 3500
+Wire Wire Line
+	6400 3400 5750 3400
+Wire Wire Line
+	5750 3300 6400 3300
+Text Label 6400 3600 2    60   ~ 0
+SOUT_LAST
+$Comp
+L Conn_01x07 J2
+U 1 1 5B0E0352
+P 5550 3400
+F 0 "J2" H 5550 3800 50  0000 C CNN
+F 1 "Conn_01x07" H 5550 3000 50  0000 C CNN
+F 2 "NQBit:CONN_SMD_EDGE_x7_1.27mm" H 5550 3400 50  0001 C CNN
+F 3 "" H 5550 3400 50  0001 C CNN
+	1    5550 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 3600 7100 3600
+Text Label 7100 3600 0    60   ~ 0
+SIN
+Wire Wire Line
+	7400 3700 7100 3700
+Text Label 7100 3700 0    60   ~ 0
+SCLK
+Wire Wire Line
+	7400 3800 7100 3800
+Text Label 7100 3800 0    60   ~ 0
+LAT
+Wire Wire Line
+	7400 3900 7100 3900
+Text Label 7100 3900 0    60   ~ 0
+GSCLK
+Wire Wire Line
+	7400 4100 7100 4100
+Text Label 7100 4100 0    60   ~ 0
+SOUT
+Text Notes 4900 1100 0    60   ~ 0
+TODO(nqbit): Add buck 36V to 3.3V.
+$Comp
+L LMZ34202 U2
+U 1 1 5B0F1954
+P 5650 5100
+F 0 "U2" H 5650 3050 60  0000 C CNN
+F 1 "LMZ34202" H 5650 5800 60  0000 C CNN
+F 2 "NQBit:43-BQFN-10mmx10mm" H 5450 3800 60  0001 C CNN
+F 3 "" H 5450 3800 60  0001 C CNN
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+Text Label 4250 4550 0    60   ~ 0
+V36P0
+Wire Wire Line
+	4250 4550 4950 4550
+Wire Wire Line
+	4950 4550 4950 4800
+Wire Wire Line
+	4950 4800 5000 4800
+Wire Wire Line
+	5000 4700 4950 4700
+Connection ~ 4950 4700
+Wire Wire Line
+	5000 4600 4950 4600
+Connection ~ 4950 4600
+Wire Wire Line
+	5000 6400 4950 6400
+Wire Wire Line
+	4950 6400 4950 7050
+Wire Wire Line
+	4950 7000 5000 7000
+Wire Wire Line
+	5000 6900 4950 6900
+Connection ~ 4950 6900
+Wire Wire Line
+	5000 6800 4950 6800
+Connection ~ 4950 6800
+Wire Wire Line
+	5000 6700 4950 6700
+Connection ~ 4950 6700
+Wire Wire Line
+	5000 6600 4950 6600
+Connection ~ 4950 6600
+Wire Wire Line
+	5000 6500 4950 6500
+Connection ~ 4950 6500
+Wire Wire Line
+	6300 6400 6350 6400
+Wire Wire Line
+	6350 6400 6350 7050
+Wire Wire Line
+	6350 7000 6300 7000
+Wire Wire Line
+	6300 6900 6350 6900
+Connection ~ 6350 6900
+Wire Wire Line
+	6350 6800 6300 6800
+Connection ~ 6350 6800
+Wire Wire Line
+	6300 6700 6350 6700
+Connection ~ 6350 6700
+Wire Wire Line
+	6300 6600 6350 6600
+Connection ~ 6350 6600
+Wire Wire Line
+	6300 6500 6350 6500
+Connection ~ 6350 6500
+$Comp
+L +3.3V #PWR05
+U 1 1 5B0F28A8
+P 6350 4650
+F 0 "#PWR05" H 6350 4500 50  0001 C CNN
+F 1 "+3.3V" H 6350 4790 50  0000 C CNN
+F 2 "" H 6350 4650 50  0001 C CNN
+F 3 "" H 6350 4650 50  0001 C CNN
+	1    6350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4650 6350 5600
+Wire Wire Line
+	6350 5300 6300 5300
+Wire Wire Line
+	6300 5200 6350 5200
+Connection ~ 6350 5200
+Wire Wire Line
+	6300 5100 6350 5100
+Connection ~ 6350 5100
+Wire Wire Line
+	6300 5000 6350 5000
+Connection ~ 6350 5000
+Wire Wire Line
+	6300 4900 6350 4900
+Connection ~ 6350 4900
+Wire Wire Line
+	6300 4800 6350 4800
+Connection ~ 6350 4800
+Wire Wire Line
+	6300 4700 6700 4700
+Connection ~ 6350 4700
+$Comp
+L GNDA #PWR06
+U 1 1 5B0F2F43
+P 4950 7050
+F 0 "#PWR06" H 4950 6800 50  0001 C CNN
+F 1 "GNDA" H 4950 6900 50  0000 C CNN
+F 2 "" H 4950 7050 50  0001 C CNN
+F 3 "" H 4950 7050 50  0001 C CNN
+	1    4950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B0F3045
+P 6350 7050
+F 0 "#PWR07" H 6350 6800 50  0001 C CNN
+F 1 "GND" H 6350 6900 50  0000 C CNN
+F 2 "" H 6350 7050 50  0001 C CNN
+F 3 "" H 6350 7050 50  0001 C CNN
+	1    6350 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 7000
+Connection ~ 4950 7000
+$Comp
+L Jumper_NC_Small JP1
+U 1 1 5B0F3F2F
+P 5900 1550
+F 0 "JP1" H 5900 1630 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5910 1490 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" H 5900 1550 50  0001 C CNN
+F 3 "" H 5900 1550 50  0001 C CNN
+	1    5900 1550
+	1    0    0    -1  
+$EndComp
+Text Label 5250 1550 0    60   ~ 0
+SOUT
+Text Label 6550 1550 2    60   ~ 0
+SOUT_LAST
+Wire Wire Line
+	5800 1550 5250 1550
+Wire Wire Line
+	6000 1550 6550 1550
+$Comp
+L R_Small R1
+U 1 1 5B0F47C3
+P 4700 5300
+F 0 "R1" V 4600 5250 50  0000 L CNN
+F 1 "8.87k" V 4800 5200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" H 4700 5300 50  0001 C CNN
+F 3 "" H 4700 5300 50  0001 C CNN
+	1    4700 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5B0F49FD
+P 4550 5350
+F 0 "#PWR08" H 4550 5100 50  0001 C CNN
+F 1 "GND" H 4550 5200 50  0000 C CNN
+F 2 "" H 4550 5350 50  0001 C CNN
+F 3 "" H 4550 5350 50  0001 C CNN
+	1    4550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5400 4950 5400
+Wire Wire Line
+	4800 5300 5000 5300
+Connection ~ 4950 5300
+Wire Wire Line
+	4600 5300 4550 5300
+Wire Wire Line
+	4550 5300 4550 5350
+Wire Wire Line
+	4950 5400 4950 5300
+Wire Wire Line
+	6350 5600 6300 5600
+Connection ~ 6350 5300
+Wire Wire Line
+	6300 5500 6350 5500
+Connection ~ 6350 5500
+Wire Wire Line
+	4800 5500 5000 5500
+$Comp
+L GND #PWR09
+U 1 1 5B0F5916
+P 4800 5550
+F 0 "#PWR09" H 4800 5300 50  0001 C CNN
+F 1 "GND" H 4800 5400 50  0000 C CNN
+F 2 "" H 4800 5550 50  0001 C CNN
+F 3 "" H 4800 5550 50  0001 C CNN
+	1    4800 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5500 4800 5550
+NoConn ~ 6300 5800
+NoConn ~ 6300 5900
+NoConn ~ 6300 6100
+NoConn ~ 6300 6200
+NoConn ~ 5000 5200
+NoConn ~ 5000 5100
+NoConn ~ 5000 5000
+NoConn ~ 5000 5700
+NoConn ~ 5000 5800
+NoConn ~ 5000 5900
+NoConn ~ 5000 6000
+NoConn ~ 5000 6100
+NoConn ~ 5000 6200
+$Comp
+L C_Small C1
+U 1 1 5B0F606C
+P 4600 4700
+F 0 "C1" H 4610 4770 50  0000 L CNN
+F 1 "100uF" H 4610 4620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 4600 4700 50  0001 C CNN
+F 3 "" H 4600 4700 50  0001 C CNN
+	1    4600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4600 4600 4550
+Connection ~ 4600 4550
+$Comp
+L GND #PWR010
+U 1 1 5B0F637A
+P 4600 4850
+F 0 "#PWR010" H 4600 4600 50  0001 C CNN
+F 1 "GND" H 4600 4700 50  0000 C CNN
+F 2 "" H 4600 4850 50  0001 C CNN
+F 3 "" H 4600 4850 50  0001 C CNN
+	1    4600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4800 4600 4850
+$Comp
+L C_Small C2
+U 1 1 5B0F6504
+P 6700 4850
+F 0 "C2" H 6710 4920 50  0000 L CNN
+F 1 "100uF" H 6710 4770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 6700 4850 50  0001 C CNN
+F 3 "" H 6700 4850 50  0001 C CNN
+	1    6700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4700 6700 4750
+$Comp
+L GND #PWR011
+U 1 1 5B0F6A59
+P 6700 5000
+F 0 "#PWR011" H 6700 4750 50  0001 C CNN
+F 1 "GND" H 6700 4850 50  0000 C CNN
+F 2 "" H 6700 5000 50  0001 C CNN
+F 3 "" H 6700 5000 50  0001 C CNN
+	1    6700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4950 6700 5000
+$Comp
+L GNDA #PWR012
+U 1 1 5B170839
+P 5400 7300
+F 0 "#PWR012" H 5400 7050 50  0001 C CNN
+F 1 "GNDA" H 5400 7150 50  0000 C CNN
+F 2 "" H 5400 7300 50  0001 C CNN
+F 3 "" H 5400 7300 50  0001 C CNN
+	1    5400 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5B17088C
+P 5900 7300
+F 0 "#PWR013" H 5900 7050 50  0001 C CNN
+F 1 "GND" H 5900 7150 50  0000 C CNN
+F 2 "" H 5900 7300 50  0001 C CNN
+F 3 "" H 5900 7300 50  0001 C CNN
+	1    5900 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 7300 5400 7250
+Wire Wire Line
+	5400 7250 5900 7250
+Wire Wire Line
+	5900 7250 5900 7300
+$EndSCHEMATC
